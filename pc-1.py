@@ -33,5 +33,4 @@ def getLatLng(addr):
     print(result)
     match_first = result['documents'][0]['address']
     return float(match_first['y']), float(match_first['x'])
-print(getLatLng('강원 속초시 미시령로2983번길 88'))
 """
