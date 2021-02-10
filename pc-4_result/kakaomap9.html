@@ -1,0 +1,4388 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ec8cb79c96414d5e9376f5d38b835c8f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ec8cb79c96414d5e9376f5d38b835c8f" ></div>
+        
+</body>
+<script>    
+    
+            var map_ec8cb79c96414d5e9376f5d38b835c8f = L.map(
+                "map_ec8cb79c96414d5e9376f5d38b835c8f",
+                {
+                    center: [37.5385583136667, 127.082385189457],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_967887947c5049698ea9f2ffd012027f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var marker_197f73e4851f4fbaa5986824d9aa497f = L.marker(
+                [37.5581659658391, 127.079578468244],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_a439f048e3a8481aad896fc3dabde088 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_197f73e4851f4fbaa5986824d9aa497f.setIcon(icon_a439f048e3a8481aad896fc3dabde088);
+        
+    
+        var popup_59a67471e7574f91ad005da2dae3ea24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af4a9cc29be64ebda7d386a8bf2fecd2 = $(`<div id="html_af4a9cc29be64ebda7d386a8bf2fecd2" style="width: 100.0%; height: 100.0%;">세븐PC방</div>`)[0];
+            popup_59a67471e7574f91ad005da2dae3ea24.setContent(html_af4a9cc29be64ebda7d386a8bf2fecd2);
+        
+
+        marker_197f73e4851f4fbaa5986824d9aa497f.bindPopup(popup_59a67471e7574f91ad005da2dae3ea24)
+        ;
+
+        
+    
+    
+            var marker_f06da138e66a4e5c815b520267cca6fd = L.marker(
+                [37.5623796070274, 127.082667208808],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_4f6539b76923401babb2177a00ac5f5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_f06da138e66a4e5c815b520267cca6fd.setIcon(icon_4f6539b76923401babb2177a00ac5f5d);
+        
+    
+        var popup_973abe331d9641a5bf4732743f681740 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68d7500e21984b9c8d75522b7aafc7d9 = $(`<div id="html_68d7500e21984b9c8d75522b7aafc7d9" style="width: 100.0%; height: 100.0%;">나인PC</div>`)[0];
+            popup_973abe331d9641a5bf4732743f681740.setContent(html_68d7500e21984b9c8d75522b7aafc7d9);
+        
+
+        marker_f06da138e66a4e5c815b520267cca6fd.bindPopup(popup_973abe331d9641a5bf4732743f681740)
+        ;
+
+        
+    
+    
+            var marker_aee34a2e9fbe4bb3868629aa9096bbd4 = L.marker(
+                [37.5531210138308, 127.091163955464],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_72265c293ff74ed3b9be81a501755a04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_aee34a2e9fbe4bb3868629aa9096bbd4.setIcon(icon_72265c293ff74ed3b9be81a501755a04);
+        
+    
+        var popup_b9175d110a7a4dceba11036041a50d78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72581c467093436d81fde7a491b57ebc = $(`<div id="html_72581c467093436d81fde7a491b57ebc" style="width: 100.0%; height: 100.0%;">1프로아레나PC방</div>`)[0];
+            popup_b9175d110a7a4dceba11036041a50d78.setContent(html_72581c467093436d81fde7a491b57ebc);
+        
+
+        marker_aee34a2e9fbe4bb3868629aa9096bbd4.bindPopup(popup_b9175d110a7a4dceba11036041a50d78)
+        ;
+
+        
+    
+    
+            var marker_ca719e18cbc0493ead8ee852918b54bc = L.marker(
+                [37.5628339492355, 127.082323629946],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_13e6a23bd69341f6a6508aa299f24b6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_ca719e18cbc0493ead8ee852918b54bc.setIcon(icon_13e6a23bd69341f6a6508aa299f24b6f);
+        
+    
+        var popup_c2923a8d377f4760b59375e6711cd48c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad8857d5a4fc40878b4dd794f749ab76 = $(`<div id="html_ad8857d5a4fc40878b4dd794f749ab76" style="width: 100.0%; height: 100.0%;">루미너스PC</div>`)[0];
+            popup_c2923a8d377f4760b59375e6711cd48c.setContent(html_ad8857d5a4fc40878b4dd794f749ab76);
+        
+
+        marker_ca719e18cbc0493ead8ee852918b54bc.bindPopup(popup_c2923a8d377f4760b59375e6711cd48c)
+        ;
+
+        
+    
+    
+            var marker_e4dc064a1acc4d64b8b71cd3d7e7997e = L.marker(
+                [37.5580744056177, 127.079070204776],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_f2756a7a816145f6a23269fccb0344a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_e4dc064a1acc4d64b8b71cd3d7e7997e.setIcon(icon_f2756a7a816145f6a23269fccb0344a8);
+        
+    
+        var popup_86c5e322fc5641d3a2dee682ba3cd991 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57b52da2736a4ac2b11fbdf0425f4439 = $(`<div id="html_57b52da2736a4ac2b11fbdf0425f4439" style="width: 100.0%; height: 100.0%;">라이온PC</div>`)[0];
+            popup_86c5e322fc5641d3a2dee682ba3cd991.setContent(html_57b52da2736a4ac2b11fbdf0425f4439);
+        
+
+        marker_e4dc064a1acc4d64b8b71cd3d7e7997e.bindPopup(popup_86c5e322fc5641d3a2dee682ba3cd991)
+        ;
+
+        
+    
+    
+            var marker_53aee90584664f30afc7d36ae0436913 = L.marker(
+                [37.5571335781662, 127.088235324981],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_1e002b4c27fc44349bf4bae417c6763b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_53aee90584664f30afc7d36ae0436913.setIcon(icon_1e002b4c27fc44349bf4bae417c6763b);
+        
+    
+        var popup_025ccd66546447ab84ebd19e2aaf789e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eee2b782fbc441668d0778d4bdb796f5 = $(`<div id="html_eee2b782fbc441668d0778d4bdb796f5" style="width: 100.0%; height: 100.0%;">쓰리팝PC카페</div>`)[0];
+            popup_025ccd66546447ab84ebd19e2aaf789e.setContent(html_eee2b782fbc441668d0778d4bdb796f5);
+        
+
+        marker_53aee90584664f30afc7d36ae0436913.bindPopup(popup_025ccd66546447ab84ebd19e2aaf789e)
+        ;
+
+        
+    
+    
+            var marker_fb51c7559d424191b3988208f69ed974 = L.marker(
+                [37.5562171319256, 127.088411928343],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_7b2da3a4f97743e78de3564f3862ff5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_fb51c7559d424191b3988208f69ed974.setIcon(icon_7b2da3a4f97743e78de3564f3862ff5b);
+        
+    
+        var popup_3ffe5b44ac424176bdc3e0af06111682 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43504193377f499e98647235547a77d5 = $(`<div id="html_43504193377f499e98647235547a77d5" style="width: 100.0%; height: 100.0%;">고스트캐슬PC방 중곡점</div>`)[0];
+            popup_3ffe5b44ac424176bdc3e0af06111682.setContent(html_43504193377f499e98647235547a77d5);
+        
+
+        marker_fb51c7559d424191b3988208f69ed974.bindPopup(popup_3ffe5b44ac424176bdc3e0af06111682)
+        ;
+
+        
+    
+    
+            var marker_1d9b0878970a4eabb64f218a10a646dd = L.marker(
+                [37.5702078674007, 127.083366353687],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_ec6cad0c16cf4a9ca26e4ec2120fa1ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_1d9b0878970a4eabb64f218a10a646dd.setIcon(icon_ec6cad0c16cf4a9ca26e4ec2120fa1ad);
+        
+    
+        var popup_5c068f82f6ae437eb1770b092313d93a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c68b209919f4c45962eda2710343fa3 = $(`<div id="html_8c68b209919f4c45962eda2710343fa3" style="width: 100.0%; height: 100.0%;">고릴라PC방 중곡점</div>`)[0];
+            popup_5c068f82f6ae437eb1770b092313d93a.setContent(html_8c68b209919f4c45962eda2710343fa3);
+        
+
+        marker_1d9b0878970a4eabb64f218a10a646dd.bindPopup(popup_5c068f82f6ae437eb1770b092313d93a)
+        ;
+
+        
+    
+    
+            var marker_099785cb432f47a68eec8c253196502c = L.marker(
+                [37.5623696913201, 127.08267398888],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_d4d7f0b4d64b4991ac3b5e86409a29a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_099785cb432f47a68eec8c253196502c.setIcon(icon_d4d7f0b4d64b4991ac3b5e86409a29a3);
+        
+    
+        var popup_3c774a7d29e7416c9ea45c9a9c59c290 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb1bf94a48d24018ba0a897e6625a801 = $(`<div id="html_bb1bf94a48d24018ba0a897e6625a801" style="width: 100.0%; height: 100.0%;">시엘PC존 중곡점</div>`)[0];
+            popup_3c774a7d29e7416c9ea45c9a9c59c290.setContent(html_bb1bf94a48d24018ba0a897e6625a801);
+        
+
+        marker_099785cb432f47a68eec8c253196502c.bindPopup(popup_3c774a7d29e7416c9ea45c9a9c59c290)
+        ;
+
+        
+    
+    
+            var marker_ea3c1858c652470a9e6fefb03d62a297 = L.marker(
+                [37.5531660942488, 127.091124400921],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_7a49c8374e904a2eb823e7f8825384bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_ea3c1858c652470a9e6fefb03d62a297.setIcon(icon_7a49c8374e904a2eb823e7f8825384bc);
+        
+    
+        var popup_6754df2ae7634053b979fc06c0f14ca7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0659aebdeaf54dce9ec71854b497f1a9 = $(`<div id="html_0659aebdeaf54dce9ec71854b497f1a9" style="width: 100.0%; height: 100.0%;">제노PC존</div>`)[0];
+            popup_6754df2ae7634053b979fc06c0f14ca7.setContent(html_0659aebdeaf54dce9ec71854b497f1a9);
+        
+
+        marker_ea3c1858c652470a9e6fefb03d62a297.bindPopup(popup_6754df2ae7634053b979fc06c0f14ca7)
+        ;
+
+        
+    
+    
+            var marker_0fb89bb155494bf2a2067d9f153dda8e = L.marker(
+                [37.5627907046042, 127.082319054984],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_7320f3cfe5be4df99c35f6df7a90494f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_0fb89bb155494bf2a2067d9f153dda8e.setIcon(icon_7320f3cfe5be4df99c35f6df7a90494f);
+        
+    
+        var popup_75054a784d0842619ddac23965d3d199 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b75ff459545414f9ed2f85fb5ffe0c5 = $(`<div id="html_1b75ff459545414f9ed2f85fb5ffe0c5" style="width: 100.0%; height: 100.0%;">시즌아이PC카페</div>`)[0];
+            popup_75054a784d0842619ddac23965d3d199.setContent(html_1b75ff459545414f9ed2f85fb5ffe0c5);
+        
+
+        marker_0fb89bb155494bf2a2067d9f153dda8e.bindPopup(popup_75054a784d0842619ddac23965d3d199)
+        ;
+
+        
+    
+    
+            var marker_a595364e12c743a78ea6364accde57e1 = L.marker(
+                [37.5549288032407, 127.092976918201],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_85677d11d4ec4dd3a1a5edfe24b3d5a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_a595364e12c743a78ea6364accde57e1.setIcon(icon_85677d11d4ec4dd3a1a5edfe24b3d5a3);
+        
+    
+        var popup_739c83cd4a3e4c4b9e8571e031bedce0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ab9c53a56524f7a9ebaf3de93bb42e6 = $(`<div id="html_2ab9c53a56524f7a9ebaf3de93bb42e6" style="width: 100.0%; height: 100.0%;">오지구지리는PC방</div>`)[0];
+            popup_739c83cd4a3e4c4b9e8571e031bedce0.setContent(html_2ab9c53a56524f7a9ebaf3de93bb42e6);
+        
+
+        marker_a595364e12c743a78ea6364accde57e1.bindPopup(popup_739c83cd4a3e4c4b9e8571e031bedce0)
+        ;
+
+        
+    
+    
+            var marker_5dfe86a62fb24b81a5788c3efc889a02 = L.marker(
+                [37.567703779386, 127.0823991681],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_fa2eb2b502d94fd28b414568a05cc71c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_5dfe86a62fb24b81a5788c3efc889a02.setIcon(icon_fa2eb2b502d94fd28b414568a05cc71c);
+        
+    
+        var popup_7e7edbf925cb4673ab50505aae81a70b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4b7c2e7937c4144a7fafe4267a9933b = $(`<div id="html_e4b7c2e7937c4144a7fafe4267a9933b" style="width: 100.0%; height: 100.0%;">티라미수PC방 중곡점</div>`)[0];
+            popup_7e7edbf925cb4673ab50505aae81a70b.setContent(html_e4b7c2e7937c4144a7fafe4267a9933b);
+        
+
+        marker_5dfe86a62fb24b81a5788c3efc889a02.bindPopup(popup_7e7edbf925cb4673ab50505aae81a70b)
+        ;
+
+        
+    
+    
+            var marker_5e9c7d9958744bd5893135885752a069 = L.marker(
+                [37.5697898826552, 127.083257220585],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_b0a57986f34b495f9be5e662d4e0b078 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_5e9c7d9958744bd5893135885752a069.setIcon(icon_b0a57986f34b495f9be5e662d4e0b078);
+        
+    
+        var popup_37118b7889904443a1b7f4ff7f68048f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b9ea300ecc64f26aa08da765cfe33b9 = $(`<div id="html_3b9ea300ecc64f26aa08da765cfe33b9" style="width: 100.0%; height: 100.0%;">루트PC존</div>`)[0];
+            popup_37118b7889904443a1b7f4ff7f68048f.setContent(html_3b9ea300ecc64f26aa08da765cfe33b9);
+        
+
+        marker_5e9c7d9958744bd5893135885752a069.bindPopup(popup_37118b7889904443a1b7f4ff7f68048f)
+        ;
+
+        
+    
+    
+            var marker_36d362113e0a42ba9065a624e5de9bec = L.marker(
+                [37.5630169350989, 127.079573441161],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_bc38c08db6244250b4bef9d3ecd4d54f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_36d362113e0a42ba9065a624e5de9bec.setIcon(icon_bc38c08db6244250b4bef9d3ecd4d54f);
+        
+    
+        var popup_ab469aed55734aacacf37a0d6fa6a91d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_329fcd64745b4f32915de95032c1e420 = $(`<div id="html_329fcd64745b4f32915de95032c1e420" style="width: 100.0%; height: 100.0%;">타짜PC</div>`)[0];
+            popup_ab469aed55734aacacf37a0d6fa6a91d.setContent(html_329fcd64745b4f32915de95032c1e420);
+        
+
+        marker_36d362113e0a42ba9065a624e5de9bec.bindPopup(popup_ab469aed55734aacacf37a0d6fa6a91d)
+        ;
+
+        
+    
+    
+            var marker_2c530e37e6ea4776944ada9dcc5ed966 = L.marker(
+                [37.5564913839365, 127.080359857799],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_2fd8b334f4ff44aaacfd1a1830a357cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_2c530e37e6ea4776944ada9dcc5ed966.setIcon(icon_2fd8b334f4ff44aaacfd1a1830a357cf);
+        
+    
+        var popup_71e2a72cbada47d29fe0730a43e3a6c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc7ee5c3a77c49f88341cf44da2e2d0d = $(`<div id="html_bc7ee5c3a77c49f88341cf44da2e2d0d" style="width: 100.0%; height: 100.0%;">아이센스리그PC방 군자역점</div>`)[0];
+            popup_71e2a72cbada47d29fe0730a43e3a6c2.setContent(html_bc7ee5c3a77c49f88341cf44da2e2d0d);
+        
+
+        marker_2c530e37e6ea4776944ada9dcc5ed966.bindPopup(popup_71e2a72cbada47d29fe0730a43e3a6c2)
+        ;
+
+        
+    
+    
+            var marker_b42ac2df55954f7aa2d7a2390f83c242 = L.marker(
+                [37.5555823096893, 127.078977032744],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_8db4487acd294de4bf0188d7ae3df2db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_b42ac2df55954f7aa2d7a2390f83c242.setIcon(icon_8db4487acd294de4bf0188d7ae3df2db);
+        
+    
+        var popup_f97ff2bb93214aba8f282c54ba408b28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cad4ef794f8a46d9acba6ea679e28e5b = $(`<div id="html_cad4ef794f8a46d9acba6ea679e28e5b" style="width: 100.0%; height: 100.0%;">엔탑PC방</div>`)[0];
+            popup_f97ff2bb93214aba8f282c54ba408b28.setContent(html_cad4ef794f8a46d9acba6ea679e28e5b);
+        
+
+        marker_b42ac2df55954f7aa2d7a2390f83c242.bindPopup(popup_f97ff2bb93214aba8f282c54ba408b28)
+        ;
+
+        
+    
+    
+            var marker_9d72f391bf9640089a1da4a88f367372 = L.marker(
+                [37.5562629000396, 127.07981524279],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_8e638f239b3b4fb79c84e84639d8a488 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_9d72f391bf9640089a1da4a88f367372.setIcon(icon_8e638f239b3b4fb79c84e84639d8a488);
+        
+    
+        var popup_58297a288a534d38a8ea1baac201da8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_661fa71b07da481dad71a6df4d94f066 = $(`<div id="html_661fa71b07da481dad71a6df4d94f066" style="width: 100.0%; height: 100.0%;">메가VR</div>`)[0];
+            popup_58297a288a534d38a8ea1baac201da8b.setContent(html_661fa71b07da481dad71a6df4d94f066);
+        
+
+        marker_9d72f391bf9640089a1da4a88f367372.bindPopup(popup_58297a288a534d38a8ea1baac201da8b)
+        ;
+
+        
+    
+    
+            var marker_36971aa0b2f24a12ad7ec52723201443 = L.marker(
+                [37.5381460109845, 127.089331972226],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_b420205d8ee74bfe97b426762fadb6f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_36971aa0b2f24a12ad7ec52723201443.setIcon(icon_b420205d8ee74bfe97b426762fadb6f7);
+        
+    
+        var popup_6e81bbec9a014424be5b9af748bc0306 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7226c998c1594ad180996ff1fea53dac = $(`<div id="html_7226c998c1594ad180996ff1fea53dac" style="width: 100.0%; height: 100.0%;">아이센스리그PC방 구의역점</div>`)[0];
+            popup_6e81bbec9a014424be5b9af748bc0306.setContent(html_7226c998c1594ad180996ff1fea53dac);
+        
+
+        marker_36971aa0b2f24a12ad7ec52723201443.bindPopup(popup_6e81bbec9a014424be5b9af748bc0306)
+        ;
+
+        
+    
+    
+            var marker_a10dd7f10dd54273801011e8cfbe9e11 = L.marker(
+                [37.53534975799908, 127.09340630830067],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_b670c6dfffaf40858bbaf1aefecc6298 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_a10dd7f10dd54273801011e8cfbe9e11.setIcon(icon_b670c6dfffaf40858bbaf1aefecc6298);
+        
+    
+        var popup_28e55ddb73c448feacef7ecd965e0dff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c024098a511d4d06892dc7acd9337aab = $(`<div id="html_c024098a511d4d06892dc7acd9337aab" style="width: 100.0%; height: 100.0%;">사이버월드PC방</div>`)[0];
+            popup_28e55ddb73c448feacef7ecd965e0dff.setContent(html_c024098a511d4d06892dc7acd9337aab);
+        
+
+        marker_a10dd7f10dd54273801011e8cfbe9e11.bindPopup(popup_28e55ddb73c448feacef7ecd965e0dff)
+        ;
+
+        
+    
+    
+            var marker_4f06172d3ee84af4bc3a6ba053f8c03f = L.marker(
+                [37.5367567198827, 127.096150699591],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_7d70ae0095494eadbee2ebd88582047b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_4f06172d3ee84af4bc3a6ba053f8c03f.setIcon(icon_7d70ae0095494eadbee2ebd88582047b);
+        
+    
+        var popup_7f239460dd0c4136aa60d73533262719 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_02ce87b0f66741ad982b47c62e085f9b = $(`<div id="html_02ce87b0f66741ad982b47c62e085f9b" style="width: 100.0%; height: 100.0%;">사이버리아PC방&플스방</div>`)[0];
+            popup_7f239460dd0c4136aa60d73533262719.setContent(html_02ce87b0f66741ad982b47c62e085f9b);
+        
+
+        marker_4f06172d3ee84af4bc3a6ba053f8c03f.bindPopup(popup_7f239460dd0c4136aa60d73533262719)
+        ;
+
+        
+    
+    
+            var marker_eff7ecd7e89542249cc909cb2c991b62 = L.marker(
+                [37.545363800171, 127.085846262846],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_904aca3e2fd848c9a1a3723377c3a586 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_eff7ecd7e89542249cc909cb2c991b62.setIcon(icon_904aca3e2fd848c9a1a3723377c3a586);
+        
+    
+        var popup_3c4337463afb4f0d8baaf74af0bb5c77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f88b7880a00d40889f744ff6f56abeb4 = $(`<div id="html_f88b7880a00d40889f744ff6f56abeb4" style="width: 100.0%; height: 100.0%;">짬타이거PC방</div>`)[0];
+            popup_3c4337463afb4f0d8baaf74af0bb5c77.setContent(html_f88b7880a00d40889f744ff6f56abeb4);
+        
+
+        marker_eff7ecd7e89542249cc909cb2c991b62.bindPopup(popup_3c4337463afb4f0d8baaf74af0bb5c77)
+        ;
+
+        
+    
+    
+            var marker_549777982cdc486dba422f0dfaa71c97 = L.marker(
+                [37.5372339650639, 127.08475979416],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_bc0104fb0d56415fbd2ebfdef1fd96f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_549777982cdc486dba422f0dfaa71c97.setIcon(icon_bc0104fb0d56415fbd2ebfdef1fd96f7);
+        
+    
+        var popup_987685dd80904f21b6f2eab3339d5eaa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e8c8ea8559f401391d576ec67d0fb15 = $(`<div id="html_2e8c8ea8559f401391d576ec67d0fb15" style="width: 100.0%; height: 100.0%;">에코스pc 구의점</div>`)[0];
+            popup_987685dd80904f21b6f2eab3339d5eaa.setContent(html_2e8c8ea8559f401391d576ec67d0fb15);
+        
+
+        marker_549777982cdc486dba422f0dfaa71c97.bindPopup(popup_987685dd80904f21b6f2eab3339d5eaa)
+        ;
+
+        
+    
+    
+            var marker_e70a9b9ca7504e40a3f9ef35d58b8a87 = L.marker(
+                [37.53841184983, 127.08807408836557],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_41017d6de74d4ab683f3e15eba53dd9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_e70a9b9ca7504e40a3f9ef35d58b8a87.setIcon(icon_41017d6de74d4ab683f3e15eba53dd9c);
+        
+    
+        var popup_e04e6af19bca4bcda3789f7d2da1b2f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_932d38dd61234b438ff87d76bc20b225 = $(`<div id="html_932d38dd61234b438ff87d76bc20b225" style="width: 100.0%; height: 100.0%;">제닉스아레나PC 구의점</div>`)[0];
+            popup_e04e6af19bca4bcda3789f7d2da1b2f9.setContent(html_932d38dd61234b438ff87d76bc20b225);
+        
+
+        marker_e70a9b9ca7504e40a3f9ef35d58b8a87.bindPopup(popup_e04e6af19bca4bcda3789f7d2da1b2f9)
+        ;
+
+        
+    
+    
+            var marker_6a8713535d8f4b39b3c0d07a5ac20ade = L.marker(
+                [37.5403804053889, 127.094082434755],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_3ab580d1e9da474e89f72f3afb8f9ba7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_6a8713535d8f4b39b3c0d07a5ac20ade.setIcon(icon_3ab580d1e9da474e89f72f3afb8f9ba7);
+        
+    
+        var popup_c98f1fd79578444b8451ec7345523f29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e35fb9cbaf584d64aa9c32cc76b442b0 = $(`<div id="html_e35fb9cbaf584d64aa9c32cc76b442b0" style="width: 100.0%; height: 100.0%;">블랙PC존</div>`)[0];
+            popup_c98f1fd79578444b8451ec7345523f29.setContent(html_e35fb9cbaf584d64aa9c32cc76b442b0);
+        
+
+        marker_6a8713535d8f4b39b3c0d07a5ac20ade.bindPopup(popup_c98f1fd79578444b8451ec7345523f29)
+        ;
+
+        
+    
+    
+            var marker_0e490442d87a411c92a18067f5eca940 = L.marker(
+                [37.5506214020825, 127.09147890743],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_cb7737bc718f4b8194e5f15cffcc11e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_0e490442d87a411c92a18067f5eca940.setIcon(icon_cb7737bc718f4b8194e5f15cffcc11e0);
+        
+    
+        var popup_a169ec11528d4f30baabcc52dbde7dd8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2255da4a9d2f45a2b57bcf79227cb1b5 = $(`<div id="html_2255da4a9d2f45a2b57bcf79227cb1b5" style="width: 100.0%; height: 100.0%;">아이비스 PC</div>`)[0];
+            popup_a169ec11528d4f30baabcc52dbde7dd8.setContent(html_2255da4a9d2f45a2b57bcf79227cb1b5);
+        
+
+        marker_0e490442d87a411c92a18067f5eca940.bindPopup(popup_a169ec11528d4f30baabcc52dbde7dd8)
+        ;
+
+        
+    
+    
+            var marker_2be9d53c1d104c8f9e9074ffedea0252 = L.marker(
+                [37.551043994314, 127.091447737257],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_7f88ef84330b4a5ca14502d7b71a7157 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_2be9d53c1d104c8f9e9074ffedea0252.setIcon(icon_7f88ef84330b4a5ca14502d7b71a7157);
+        
+    
+        var popup_f37e469c5fac4f63bd4d0333c64af63e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19463b7969ea4c8fa9838286b12031f9 = $(`<div id="html_19463b7969ea4c8fa9838286b12031f9" style="width: 100.0%; height: 100.0%;">피씨방이다</div>`)[0];
+            popup_f37e469c5fac4f63bd4d0333c64af63e.setContent(html_19463b7969ea4c8fa9838286b12031f9);
+        
+
+        marker_2be9d53c1d104c8f9e9074ffedea0252.bindPopup(popup_f37e469c5fac4f63bd4d0333c64af63e)
+        ;
+
+        
+    
+    
+            var marker_7152f2f02d774ad7a1adb46946835876 = L.marker(
+                [37.5375009040359, 127.084420657706],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_cb704082b4284a1ba33eb7969f3337eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_7152f2f02d774ad7a1adb46946835876.setIcon(icon_cb704082b4284a1ba33eb7969f3337eb);
+        
+    
+        var popup_a76f710ca1ca465eaada3d154d5b5778 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78845f2edb3c4f42ad844d9114dac92a = $(`<div id="html_78845f2edb3c4f42ad844d9114dac92a" style="width: 100.0%; height: 100.0%;">핑크죤</div>`)[0];
+            popup_a76f710ca1ca465eaada3d154d5b5778.setContent(html_78845f2edb3c4f42ad844d9114dac92a);
+        
+
+        marker_7152f2f02d774ad7a1adb46946835876.bindPopup(popup_a76f710ca1ca465eaada3d154d5b5778)
+        ;
+
+        
+    
+    
+            var marker_c032c182301d48658c24de04970f112d = L.marker(
+                [37.5407934526154, 127.095839059846],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_2d56f9f9219b49e39db8ca9d7ab562f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_c032c182301d48658c24de04970f112d.setIcon(icon_2d56f9f9219b49e39db8ca9d7ab562f2);
+        
+    
+        var popup_6dd2bb1620a1439399690667d8ffdbfa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a46de70ccbe4fafb0669fdb79ae2ea4 = $(`<div id="html_8a46de70ccbe4fafb0669fdb79ae2ea4" style="width: 100.0%; height: 100.0%;">3POP PC방</div>`)[0];
+            popup_6dd2bb1620a1439399690667d8ffdbfa.setContent(html_8a46de70ccbe4fafb0669fdb79ae2ea4);
+        
+
+        marker_c032c182301d48658c24de04970f112d.bindPopup(popup_6dd2bb1620a1439399690667d8ffdbfa)
+        ;
+
+        
+    
+    
+            var marker_b931ed7440bb4054afede258d27b9ae5 = L.marker(
+                [37.5385676854393, 127.089323423449],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_b7ab8563c6a24d258461fd74ba06c5a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_b931ed7440bb4054afede258d27b9ae5.setIcon(icon_b7ab8563c6a24d258461fd74ba06c5a4);
+        
+    
+        var popup_782e48edbd564c1c81bffedadb864f16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e975437dcb96447aabef91853ba44786 = $(`<div id="html_e975437dcb96447aabef91853ba44786" style="width: 100.0%; height: 100.0%;">엔탑PC카페 구의점</div>`)[0];
+            popup_782e48edbd564c1c81bffedadb864f16.setContent(html_e975437dcb96447aabef91853ba44786);
+        
+
+        marker_b931ed7440bb4054afede258d27b9ae5.bindPopup(popup_782e48edbd564c1c81bffedadb864f16)
+        ;
+
+        
+    
+    
+            var marker_f1d8b0df6b974b00998574088e97d3d8 = L.marker(
+                [37.5405171983654, 127.094281751955],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_c0341ed3fc8e4f908d2115f382d2ee09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_f1d8b0df6b974b00998574088e97d3d8.setIcon(icon_c0341ed3fc8e4f908d2115f382d2ee09);
+        
+    
+        var popup_65a4f38c64f7484ab9e50df9975654b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4bec427778ef49f08e2319141fdc2899 = $(`<div id="html_4bec427778ef49f08e2319141fdc2899" style="width: 100.0%; height: 100.0%;">맥스피드PC방 구의본점</div>`)[0];
+            popup_65a4f38c64f7484ab9e50df9975654b0.setContent(html_4bec427778ef49f08e2319141fdc2899);
+        
+
+        marker_f1d8b0df6b974b00998574088e97d3d8.bindPopup(popup_65a4f38c64f7484ab9e50df9975654b0)
+        ;
+
+        
+    
+    
+            var marker_c07ba50fa5f84feda687864624c8699f = L.marker(
+                [37.5394901191931, 127.084689932481],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_0938bbe4cc024085959c8079bb7db2d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_c07ba50fa5f84feda687864624c8699f.setIcon(icon_0938bbe4cc024085959c8079bb7db2d3);
+        
+    
+        var popup_437b2b004a7d4c2e9d5a63e2396c60a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed3035380c6545d194e214a126ee05ee = $(`<div id="html_ed3035380c6545d194e214a126ee05ee" style="width: 100.0%; height: 100.0%;">앤탑피시존</div>`)[0];
+            popup_437b2b004a7d4c2e9d5a63e2396c60a2.setContent(html_ed3035380c6545d194e214a126ee05ee);
+        
+
+        marker_c07ba50fa5f84feda687864624c8699f.bindPopup(popup_437b2b004a7d4c2e9d5a63e2396c60a2)
+        ;
+
+        
+    
+    
+            var marker_bac554d65bad4b90925a3404d7eaa8e2 = L.marker(
+                [37.5406179112101, 127.094530810752],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_9b9e73bfd5784195895314692a5de39b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_bac554d65bad4b90925a3404d7eaa8e2.setIcon(icon_9b9e73bfd5784195895314692a5de39b);
+        
+    
+        var popup_e6370b8909d44682b030d991ebde13e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1d92b59c68c4312bf1ff14567d54f8b = $(`<div id="html_a1d92b59c68c4312bf1ff14567d54f8b" style="width: 100.0%; height: 100.0%;">라이또PC 구의점</div>`)[0];
+            popup_e6370b8909d44682b030d991ebde13e9.setContent(html_a1d92b59c68c4312bf1ff14567d54f8b);
+        
+
+        marker_bac554d65bad4b90925a3404d7eaa8e2.bindPopup(popup_e6370b8909d44682b030d991ebde13e9)
+        ;
+
+        
+    
+    
+            var marker_37cf5141c8de41dc88e20f0a966932d8 = L.marker(
+                [37.547787714119, 127.087985536271],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_3dc1bd95a216437ea3775c8fdad7cdf4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_37cf5141c8de41dc88e20f0a966932d8.setIcon(icon_3dc1bd95a216437ea3775c8fdad7cdf4);
+        
+    
+        var popup_4914b16968db4d26bff83b2fe5b489ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_821b528952a442329bc1cb981121d1f3 = $(`<div id="html_821b528952a442329bc1cb981121d1f3" style="width: 100.0%; height: 100.0%;">아이비스 아름다운PC방</div>`)[0];
+            popup_4914b16968db4d26bff83b2fe5b489ba.setContent(html_821b528952a442329bc1cb981121d1f3);
+        
+
+        marker_37cf5141c8de41dc88e20f0a966932d8.bindPopup(popup_4914b16968db4d26bff83b2fe5b489ba)
+        ;
+
+        
+    
+    
+            var marker_d3c5b108e8eb4b889054e0281e432cbb = L.marker(
+                [37.5407970529365, 127.095843590501],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_aae218c614c24b5982d667424dfb3c73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_d3c5b108e8eb4b889054e0281e432cbb.setIcon(icon_aae218c614c24b5982d667424dfb3c73);
+        
+    
+        var popup_25db8144ae7043ebb753a73f885d2876 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ebf24e65e9c41c58ce866ec99843c2d = $(`<div id="html_2ebf24e65e9c41c58ce866ec99843c2d" style="width: 100.0%; height: 100.0%;">놀토PC방</div>`)[0];
+            popup_25db8144ae7043ebb753a73f885d2876.setContent(html_2ebf24e65e9c41c58ce866ec99843c2d);
+        
+
+        marker_d3c5b108e8eb4b889054e0281e432cbb.bindPopup(popup_25db8144ae7043ebb753a73f885d2876)
+        ;
+
+        
+    
+    
+            var marker_967ec51867574ed3b54216a1cdf80f17 = L.marker(
+                [37.5399297417842, 127.084780949607],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_ed7694d61f6f4dafa1777bdf9739b9bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_967ec51867574ed3b54216a1cdf80f17.setIcon(icon_ed7694d61f6f4dafa1777bdf9739b9bf);
+        
+    
+        var popup_3adae6d828da40deb781e82271f2575a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_995825708348490da353af28178dd332 = $(`<div id="html_995825708348490da353af28178dd332" style="width: 100.0%; height: 100.0%;">이네이처플라워PC방</div>`)[0];
+            popup_3adae6d828da40deb781e82271f2575a.setContent(html_995825708348490da353af28178dd332);
+        
+
+        marker_967ec51867574ed3b54216a1cdf80f17.bindPopup(popup_3adae6d828da40deb781e82271f2575a)
+        ;
+
+        
+    
+    
+            var marker_2c275a20002a4898a6e78efac321d4bd = L.marker(
+                [37.5389498424397, 127.089147367837],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_1d9018d94b6e4aea99fb269eb9205992 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_2c275a20002a4898a6e78efac321d4bd.setIcon(icon_1d9018d94b6e4aea99fb269eb9205992);
+        
+    
+        var popup_55bc0c884e794951b740f70fbda64975 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93f4521884654cc78ab836a5474fa8ff = $(`<div id="html_93f4521884654cc78ab836a5474fa8ff" style="width: 100.0%; height: 100.0%;">샹떼PC카페 구의역점</div>`)[0];
+            popup_55bc0c884e794951b740f70fbda64975.setContent(html_93f4521884654cc78ab836a5474fa8ff);
+        
+
+        marker_2c275a20002a4898a6e78efac321d4bd.bindPopup(popup_55bc0c884e794951b740f70fbda64975)
+        ;
+
+        
+    
+    
+            var marker_4fd7d0a4970448c496b4c8ca30bdacb0 = L.marker(
+                [37.5406970467691, 127.094721004375],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_2c474b5c5344403ea0847f6d9f3af4b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_4fd7d0a4970448c496b4c8ca30bdacb0.setIcon(icon_2c474b5c5344403ea0847f6d9f3af4b1);
+        
+    
+        var popup_9ab388e6573d46bbb80a86baffa0eb09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc3aa4de3bae45b7afc726a89af6a0cc = $(`<div id="html_fc3aa4de3bae45b7afc726a89af6a0cc" style="width: 100.0%; height: 100.0%;">고스트캐슬</div>`)[0];
+            popup_9ab388e6573d46bbb80a86baffa0eb09.setContent(html_fc3aa4de3bae45b7afc726a89af6a0cc);
+        
+
+        marker_4fd7d0a4970448c496b4c8ca30bdacb0.bindPopup(popup_9ab388e6573d46bbb80a86baffa0eb09)
+        ;
+
+        
+    
+    
+            var marker_9d540e159d484932b6ee46179994de86 = L.marker(
+                [37.5402794876083, 127.08945219393],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_dcbc5c8a04c94b27b88f66729204b8fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_9d540e159d484932b6ee46179994de86.setIcon(icon_dcbc5c8a04c94b27b88f66729204b8fe);
+        
+    
+        var popup_aa0f431b4c0a4e4682b89773e855e261 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e63870998d2947a0933e59acbe1f6da4 = $(`<div id="html_e63870998d2947a0933e59acbe1f6da4" style="width: 100.0%; height: 100.0%;">넷플러스PC방</div>`)[0];
+            popup_aa0f431b4c0a4e4682b89773e855e261.setContent(html_e63870998d2947a0933e59acbe1f6da4);
+        
+
+        marker_9d540e159d484932b6ee46179994de86.bindPopup(popup_aa0f431b4c0a4e4682b89773e855e261)
+        ;
+
+        
+    
+    
+            var marker_314e94addd944f1a8682d29a5edb2157 = L.marker(
+                [37.5547393431172, 127.093294696839],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_9647b70bf55d434a99bd130d2cae59e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_314e94addd944f1a8682d29a5edb2157.setIcon(icon_9647b70bf55d434a99bd130d2cae59e1);
+        
+    
+        var popup_b8310d037bad46c7a185fe9d13748893 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f1377857a004bb1bd89cb589091a726 = $(`<div id="html_1f1377857a004bb1bd89cb589091a726" style="width: 100.0%; height: 100.0%;">개굿PC 구의본점</div>`)[0];
+            popup_b8310d037bad46c7a185fe9d13748893.setContent(html_1f1377857a004bb1bd89cb589091a726);
+        
+
+        marker_314e94addd944f1a8682d29a5edb2157.bindPopup(popup_b8310d037bad46c7a185fe9d13748893)
+        ;
+
+        
+    
+    
+            var marker_e2531ddf1f0a46838d497b55ee62787b = L.marker(
+                [37.5526222371298, 127.090675589312],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_3ee0610241794c8fab24268fe5ec406a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_e2531ddf1f0a46838d497b55ee62787b.setIcon(icon_3ee0610241794c8fab24268fe5ec406a);
+        
+    
+        var popup_e9193efd7fa34f5ba19482645972982b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9dc92ab164740f085b374858f520ac7 = $(`<div id="html_e9dc92ab164740f085b374858f520ac7" style="width: 100.0%; height: 100.0%;">pluszone</div>`)[0];
+            popup_e9193efd7fa34f5ba19482645972982b.setContent(html_e9dc92ab164740f085b374858f520ac7);
+        
+
+        marker_e2531ddf1f0a46838d497b55ee62787b.bindPopup(popup_e9193efd7fa34f5ba19482645972982b)
+        ;
+
+        
+    
+    
+            var marker_f4e45bd7d19d4ac09c17e78b263da64d = L.marker(
+                [37.5525970057389, 127.090680085504],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_bd88623e096f4c26908b94c6a6a02a5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_f4e45bd7d19d4ac09c17e78b263da64d.setIcon(icon_bd88623e096f4c26908b94c6a6a02a5f);
+        
+    
+        var popup_7046361d106945a4aeb6491b4e18c172 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_418b7d3f3d6e484d870a10e5ab283d25 = $(`<div id="html_418b7d3f3d6e484d870a10e5ab283d25" style="width: 100.0%; height: 100.0%;">BMW노래방</div>`)[0];
+            popup_7046361d106945a4aeb6491b4e18c172.setContent(html_418b7d3f3d6e484d870a10e5ab283d25);
+        
+
+        marker_f4e45bd7d19d4ac09c17e78b263da64d.bindPopup(popup_7046361d106945a4aeb6491b4e18c172)
+        ;
+
+        
+    
+    
+            var marker_c7a48300ee6141f7b7c8c4b874b87b36 = L.marker(
+                [37.5384919843929, 127.089345962687],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_e4ceef189d4047b3ad2d41ba94077a3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_c7a48300ee6141f7b7c8c4b874b87b36.setIcon(icon_e4ceef189d4047b3ad2d41ba94077a3d);
+        
+    
+        var popup_1eb1f04300e943bc8b68626c0be3c042 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85b40837134e43efae455188c94552b1 = $(`<div id="html_85b40837134e43efae455188c94552b1" style="width: 100.0%; height: 100.0%;">엔탑PC방</div>`)[0];
+            popup_1eb1f04300e943bc8b68626c0be3c042.setContent(html_85b40837134e43efae455188c94552b1);
+        
+
+        marker_c7a48300ee6141f7b7c8c4b874b87b36.bindPopup(popup_1eb1f04300e943bc8b68626c0be3c042)
+        ;
+
+        
+    
+    
+            var marker_efd2731b3b1841ee86bd7d14331ae1e0 = L.marker(
+                [37.5394972817267, 127.084753304143],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_ef160af17b31428b94596a91c3c401ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_efd2731b3b1841ee86bd7d14331ae1e0.setIcon(icon_ef160af17b31428b94596a91c3c401ae);
+        
+    
+        var popup_9b9287b1ec4c4d0bab773d838fd92028 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc62aaa3e9344726b0408322e8133bd3 = $(`<div id="html_bc62aaa3e9344726b0408322e8133bd3" style="width: 100.0%; height: 100.0%;">나이트매니아구의점</div>`)[0];
+            popup_9b9287b1ec4c4d0bab773d838fd92028.setContent(html_bc62aaa3e9344726b0408322e8133bd3);
+        
+
+        marker_efd2731b3b1841ee86bd7d14331ae1e0.bindPopup(popup_9b9287b1ec4c4d0bab773d838fd92028)
+        ;
+
+        
+    
+    
+            var marker_747698bd62674b91a141ab6d760d63d1 = L.marker(
+                [37.5397421615229, 127.085020614338],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_7584958e86b644f3a463db301fc6dfdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_747698bd62674b91a141ab6d760d63d1.setIcon(icon_7584958e86b644f3a463db301fc6dfdd);
+        
+    
+        var popup_90b377a6822f4611b4743a92d7a2c436 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aea95868a1994838ad527f5375104331 = $(`<div id="html_aea95868a1994838ad527f5375104331" style="width: 100.0%; height: 100.0%;">아이넷폴리스PC방</div>`)[0];
+            popup_90b377a6822f4611b4743a92d7a2c436.setContent(html_aea95868a1994838ad527f5375104331);
+        
+
+        marker_747698bd62674b91a141ab6d760d63d1.bindPopup(popup_90b377a6822f4611b4743a92d7a2c436)
+        ;
+
+        
+    
+    
+            var marker_d8b06292fcba4724a7bcbd808d6250df = L.marker(
+                [37.5407898522941, 127.095834529191],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_ad26c5d9574943bbae7611055e0bdca4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_d8b06292fcba4724a7bcbd808d6250df.setIcon(icon_ad26c5d9574943bbae7611055e0bdca4);
+        
+    
+        var popup_7e74487114a44de5b06255b97da0db94 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba55b21cb03b43b799b5a731bc3a89fd = $(`<div id="html_ba55b21cb03b43b799b5a731bc3a89fd" style="width: 100.0%; height: 100.0%;">제노PC</div>`)[0];
+            popup_7e74487114a44de5b06255b97da0db94.setContent(html_ba55b21cb03b43b799b5a731bc3a89fd);
+        
+
+        marker_d8b06292fcba4724a7bcbd808d6250df.bindPopup(popup_7e74487114a44de5b06255b97da0db94)
+        ;
+
+        
+    
+    
+            var marker_0da7bf2295ef409297869875a4cdca92 = L.marker(
+                [37.5442775673792, 127.091354604171],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_4a17f5479afb469784c4bb0a40fd3f32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_0da7bf2295ef409297869875a4cdca92.setIcon(icon_4a17f5479afb469784c4bb0a40fd3f32);
+        
+    
+        var popup_2596d7c02f2742f4b3600f474bba30c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8e2c525a08540be8cd7f60443884af3 = $(`<div id="html_e8e2c525a08540be8cd7f60443884af3" style="width: 100.0%; height: 100.0%;">에코스PC방</div>`)[0];
+            popup_2596d7c02f2742f4b3600f474bba30c2.setContent(html_e8e2c525a08540be8cd7f60443884af3);
+        
+
+        marker_0da7bf2295ef409297869875a4cdca92.bindPopup(popup_2596d7c02f2742f4b3600f474bba30c2)
+        ;
+
+        
+    
+    
+            var marker_98feba8ed78141adb2d274495894a2ac = L.marker(
+                [37.5478085120196, 127.106494299242],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_deee382c472849569474cfb0245063ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_98feba8ed78141adb2d274495894a2ac.setIcon(icon_deee382c472849569474cfb0245063ff);
+        
+    
+        var popup_67412c0d1f814e3e91f8953afbe02072 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_930b9054dd8b48bcbf5ee2c217ffb71b = $(`<div id="html_930b9054dd8b48bcbf5ee2c217ffb71b" style="width: 100.0%; height: 100.0%;">더체인지피씨카페 광장331점</div>`)[0];
+            popup_67412c0d1f814e3e91f8953afbe02072.setContent(html_930b9054dd8b48bcbf5ee2c217ffb71b);
+        
+
+        marker_98feba8ed78141adb2d274495894a2ac.bindPopup(popup_67412c0d1f814e3e91f8953afbe02072)
+        ;
+
+        
+    
+    
+            var marker_893bb1d3dcfa43b6bcc39b45ae5db9cf = L.marker(
+                [37.5478121160086, 127.10649430437],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_06adf3eb71cd4a51a20aa61d36e72d63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_893bb1d3dcfa43b6bcc39b45ae5db9cf.setIcon(icon_06adf3eb71cd4a51a20aa61d36e72d63);
+        
+    
+        var popup_ce955ee0cf8e4b54aae610b13b882567 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60ef76e855f14866a387e215d3332702 = $(`<div id="html_60ef76e855f14866a387e215d3332702" style="width: 100.0%; height: 100.0%;">타이온PC방</div>`)[0];
+            popup_ce955ee0cf8e4b54aae610b13b882567.setContent(html_60ef76e855f14866a387e215d3332702);
+        
+
+        marker_893bb1d3dcfa43b6bcc39b45ae5db9cf.bindPopup(popup_ce955ee0cf8e4b54aae610b13b882567)
+        ;
+
+        
+    
+    
+            var marker_4b74c0c27bf541428568cd5992fa614d = L.marker(
+                [37.5397610314173, 127.06688954068],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_3f9b96d64cf641cd906da3ea829a18aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_4b74c0c27bf541428568cd5992fa614d.setIcon(icon_3f9b96d64cf641cd906da3ea829a18aa);
+        
+    
+        var popup_1068dd242b084964947c740914a1ca01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6cf60a0178c74475a23424aedc49f40a = $(`<div id="html_6cf60a0178c74475a23424aedc49f40a" style="width: 100.0%; height: 100.0%;">아이닉스PC방 건대1호점</div>`)[0];
+            popup_1068dd242b084964947c740914a1ca01.setContent(html_6cf60a0178c74475a23424aedc49f40a);
+        
+
+        marker_4b74c0c27bf541428568cd5992fa614d.bindPopup(popup_1068dd242b084964947c740914a1ca01)
+        ;
+
+        
+    
+    
+            var marker_1fd61e86ef434db89f7ae74217bb3e9b = L.marker(
+                [37.5383848980941, 127.074903683409],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_2cd376035ab741c6bc7ce8beabb97134 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_1fd61e86ef434db89f7ae74217bb3e9b.setIcon(icon_2cd376035ab741c6bc7ce8beabb97134);
+        
+    
+        var popup_0b957bb428ad4ae3b67c077166a14a08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc15a3b9b306480c95c3f6d6a4585772 = $(`<div id="html_fc15a3b9b306480c95c3f6d6a4585772" style="width: 100.0%; height: 100.0%;">3POP PC카페</div>`)[0];
+            popup_0b957bb428ad4ae3b67c077166a14a08.setContent(html_fc15a3b9b306480c95c3f6d6a4585772);
+        
+
+        marker_1fd61e86ef434db89f7ae74217bb3e9b.bindPopup(popup_0b957bb428ad4ae3b67c077166a14a08)
+        ;
+
+        
+    
+    
+            var marker_6b03fecdbe004b7ab5fd1d9af0d180c5 = L.marker(
+                [37.54021768395086, 127.0687275097382],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_d0f5feb02e3847ee8eb545f635817efb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_6b03fecdbe004b7ab5fd1d9af0d180c5.setIcon(icon_d0f5feb02e3847ee8eb545f635817efb);
+        
+    
+        var popup_070c61fa355f41ffb0aa66946f152c01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3461ffc617b642c3b3e557a97dcaa000 = $(`<div id="html_3461ffc617b642c3b3e557a97dcaa000" style="width: 100.0%; height: 100.0%;">브리즈VR카페 건대점</div>`)[0];
+            popup_070c61fa355f41ffb0aa66946f152c01.setContent(html_3461ffc617b642c3b3e557a97dcaa000);
+        
+
+        marker_6b03fecdbe004b7ab5fd1d9af0d180c5.bindPopup(popup_070c61fa355f41ffb0aa66946f152c01)
+        ;
+
+        
+    
+    
+            var marker_dc25dc0e1e674307943d1c81d32ab78f = L.marker(
+                [37.5397158253842, 127.070261357078],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_913551e3078e4e218722d895b980eb77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_dc25dc0e1e674307943d1c81d32ab78f.setIcon(icon_913551e3078e4e218722d895b980eb77);
+        
+    
+        var popup_65d76e0f88044e6680730c991aff2f9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41f0a236a82a49bab4ef7452a6cc0f57 = $(`<div id="html_41f0a236a82a49bab4ef7452a6cc0f57" style="width: 100.0%; height: 100.0%;">게이트5PC방</div>`)[0];
+            popup_65d76e0f88044e6680730c991aff2f9c.setContent(html_41f0a236a82a49bab4ef7452a6cc0f57);
+        
+
+        marker_dc25dc0e1e674307943d1c81d32ab78f.bindPopup(popup_65d76e0f88044e6680730c991aff2f9c)
+        ;
+
+        
+    
+    
+            var marker_ddd9aec705674082a278a751f9e77ee1 = L.marker(
+                [37.53262047083452, 127.0801294576427],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_7fce1e05ce3b4b28a4a5f35713cdbe2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_ddd9aec705674082a278a751f9e77ee1.setIcon(icon_7fce1e05ce3b4b28a4a5f35713cdbe2b);
+        
+    
+        var popup_53921e8e7de44b6a8bafe84e06c16462 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b30970ccd4be4d46b119e24b25582cc8 = $(`<div id="html_b30970ccd4be4d46b119e24b25582cc8" style="width: 100.0%; height: 100.0%;">제닉스아레나PC방</div>`)[0];
+            popup_53921e8e7de44b6a8bafe84e06c16462.setContent(html_b30970ccd4be4d46b119e24b25582cc8);
+        
+
+        marker_ddd9aec705674082a278a751f9e77ee1.bindPopup(popup_53921e8e7de44b6a8bafe84e06c16462)
+        ;
+
+        
+    
+    
+            var marker_a0989a4e076642098d61063ef142f80c = L.marker(
+                [37.5321874959742, 127.085957873075],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_a839468e497641eb8c451c3f2792b582 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_a0989a4e076642098d61063ef142f80c.setIcon(icon_a839468e497641eb8c451c3f2792b582);
+        
+    
+        var popup_4e131e316a82487e94766093030b80d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd45dc9658de4a5aacf81fb9fee92b75 = $(`<div id="html_fd45dc9658de4a5aacf81fb9fee92b75" style="width: 100.0%; height: 100.0%;">아이닉스PC</div>`)[0];
+            popup_4e131e316a82487e94766093030b80d4.setContent(html_fd45dc9658de4a5aacf81fb9fee92b75);
+        
+
+        marker_a0989a4e076642098d61063ef142f80c.bindPopup(popup_4e131e316a82487e94766093030b80d4)
+        ;
+
+        
+    
+    
+            var marker_e17041eff2f34e5f8a8f4d0953e62599 = L.marker(
+                [37.5327427766518, 127.077778559776],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_eb559e9db4214009a43dba141adf76fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_e17041eff2f34e5f8a8f4d0953e62599.setIcon(icon_eb559e9db4214009a43dba141adf76fe);
+        
+    
+        var popup_bc03083e5ead4793b4b5e848f34bd6fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa73d2d7e10140b692a9b71fd6d23bf2 = $(`<div id="html_aa73d2d7e10140b692a9b71fd6d23bf2" style="width: 100.0%; height: 100.0%;">맵스PC카페</div>`)[0];
+            popup_bc03083e5ead4793b4b5e848f34bd6fd.setContent(html_aa73d2d7e10140b692a9b71fd6d23bf2);
+        
+
+        marker_e17041eff2f34e5f8a8f4d0953e62599.bindPopup(popup_bc03083e5ead4793b4b5e848f34bd6fd)
+        ;
+
+        
+    
+    
+            var marker_a10acbd2bcad41f6a60b5db7f83d98d6 = L.marker(
+                [37.5401823436933, 127.067514506495],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_30d7c10e2a784e289f7926bbb6f2d444 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_a10acbd2bcad41f6a60b5db7f83d98d6.setIcon(icon_30d7c10e2a784e289f7926bbb6f2d444);
+        
+    
+        var popup_37f4c44b4ea748048a457a45cd84de3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b34e32d85a14133ad2092866f0f428e = $(`<div id="html_2b34e32d85a14133ad2092866f0f428e" style="width: 100.0%; height: 100.0%;">수PC방</div>`)[0];
+            popup_37f4c44b4ea748048a457a45cd84de3a.setContent(html_2b34e32d85a14133ad2092866f0f428e);
+        
+
+        marker_a10acbd2bcad41f6a60b5db7f83d98d6.bindPopup(popup_37f4c44b4ea748048a457a45cd84de3a)
+        ;
+
+        
+    
+    
+            var marker_e13ded16da684e48943457d024a87b71 = L.marker(
+                [37.5370229849476, 127.07708376605],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_e6162ad0f3a54a97ab2ea7f822d0b32e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_e13ded16da684e48943457d024a87b71.setIcon(icon_e6162ad0f3a54a97ab2ea7f822d0b32e);
+        
+    
+        var popup_ecf5e08756f24e7cb70df64d2e46c3dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35d21be55ff64671be42ef28ea2c43de = $(`<div id="html_35d21be55ff64671be42ef28ea2c43de" style="width: 100.0%; height: 100.0%;">아이콘PC방</div>`)[0];
+            popup_ecf5e08756f24e7cb70df64d2e46c3dd.setContent(html_35d21be55ff64671be42ef28ea2c43de);
+        
+
+        marker_e13ded16da684e48943457d024a87b71.bindPopup(popup_ecf5e08756f24e7cb70df64d2e46c3dd)
+        ;
+
+        
+    
+    
+            var marker_7bac1e51cc1f4ed4a53349133b9d8260 = L.marker(
+                [37.5317528865344, 127.080011997828],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_9b23ec399cb049758bac2677d629b6f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_7bac1e51cc1f4ed4a53349133b9d8260.setIcon(icon_9b23ec399cb049758bac2677d629b6f5);
+        
+    
+        var popup_95b7d05bb24b462e90f4c1d9cd0adfa3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_213fafdbe9954c4eaa084f9a6481e6d3 = $(`<div id="html_213fafdbe9954c4eaa084f9a6481e6d3" style="width: 100.0%; height: 100.0%;">이로운셀프PC 자양본점</div>`)[0];
+            popup_95b7d05bb24b462e90f4c1d9cd0adfa3.setContent(html_213fafdbe9954c4eaa084f9a6481e6d3);
+        
+
+        marker_7bac1e51cc1f4ed4a53349133b9d8260.bindPopup(popup_95b7d05bb24b462e90f4c1d9cd0adfa3)
+        ;
+
+        
+    
+    
+            var marker_1e2bc2285cb044fb927a372e23d17d04 = L.marker(
+                [37.5324051048842, 127.078830397209],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_db246bb692a6466384acf3065d508807 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_1e2bc2285cb044fb927a372e23d17d04.setIcon(icon_db246bb692a6466384acf3065d508807);
+        
+    
+        var popup_17d740cfc47b42ab8ced69bcbb4ab8b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34a9a1bb8394466cb2d8640d354f9faa = $(`<div id="html_34a9a1bb8394466cb2d8640d354f9faa" style="width: 100.0%; height: 100.0%;">해피로PC방 자양점</div>`)[0];
+            popup_17d740cfc47b42ab8ced69bcbb4ab8b9.setContent(html_34a9a1bb8394466cb2d8640d354f9faa);
+        
+
+        marker_1e2bc2285cb044fb927a372e23d17d04.bindPopup(popup_17d740cfc47b42ab8ced69bcbb4ab8b9)
+        ;
+
+        
+    
+    
+            var marker_11674078389744898dad13b2b3d38f1f = L.marker(
+                [37.5358029457871, 127.082541690705],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_86db61d1be17487eba7443965c90ee28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_11674078389744898dad13b2b3d38f1f.setIcon(icon_86db61d1be17487eba7443965c90ee28);
+        
+    
+        var popup_d6ea32581ad4437da6732b2be677408b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32a531c68eb44f7ca7f38a813fb93128 = $(`<div id="html_32a531c68eb44f7ca7f38a813fb93128" style="width: 100.0%; height: 100.0%;">BNE PC카페 자양동점</div>`)[0];
+            popup_d6ea32581ad4437da6732b2be677408b.setContent(html_32a531c68eb44f7ca7f38a813fb93128);
+        
+
+        marker_11674078389744898dad13b2b3d38f1f.bindPopup(popup_d6ea32581ad4437da6732b2be677408b)
+        ;
+
+        
+    
+    
+            var marker_d0bfb44cc50543f1a3f57347df10738d = L.marker(
+                [37.5326526618935, 127.085614464758],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_6723ce8bffd04cb9a7abb2d1abac11f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_d0bfb44cc50543f1a3f57347df10738d.setIcon(icon_6723ce8bffd04cb9a7abb2d1abac11f3);
+        
+    
+        var popup_4f18990ee11d4e6c9bb2f45475a7fff9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d978077a726b42b5a122709c16d3e379 = $(`<div id="html_d978077a726b42b5a122709c16d3e379" style="width: 100.0%; height: 100.0%;">라이또PC방 자양점</div>`)[0];
+            popup_4f18990ee11d4e6c9bb2f45475a7fff9.setContent(html_d978077a726b42b5a122709c16d3e379);
+        
+
+        marker_d0bfb44cc50543f1a3f57347df10738d.bindPopup(popup_4f18990ee11d4e6c9bb2f45475a7fff9)
+        ;
+
+        
+    
+    
+            var marker_254251c3a4914a97afb39029ec5b597e = L.marker(
+                [37.531356781181, 127.075394456922],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_b9cf8276097446cdb4b3f20e43388844 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_254251c3a4914a97afb39029ec5b597e.setIcon(icon_b9cf8276097446cdb4b3f20e43388844);
+        
+    
+        var popup_310f5f9ab1dc45d49ce121347de6a7c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3145cfae242c450d8f8f65f37fd6f503 = $(`<div id="html_3145cfae242c450d8f8f65f37fd6f503" style="width: 100.0%; height: 100.0%;">피에스타PC방</div>`)[0];
+            popup_310f5f9ab1dc45d49ce121347de6a7c8.setContent(html_3145cfae242c450d8f8f65f37fd6f503);
+        
+
+        marker_254251c3a4914a97afb39029ec5b597e.bindPopup(popup_310f5f9ab1dc45d49ce121347de6a7c8)
+        ;
+
+        
+    
+    
+            var marker_d7eab7044eb0495ea149d9aaec72d2c4 = L.marker(
+                [37.5348162520859, 127.067048048687],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_5fe6301d8b9047b6a74dfe9ea46abe3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_d7eab7044eb0495ea149d9aaec72d2c4.setIcon(icon_5fe6301d8b9047b6a74dfe9ea46abe3d);
+        
+    
+        var popup_cae23eb36d994a219f3152e41a0afb92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83b693bea0394d20ba1cc73007910c8b = $(`<div id="html_83b693bea0394d20ba1cc73007910c8b" style="width: 100.0%; height: 100.0%;">멍키타운 PC방</div>`)[0];
+            popup_cae23eb36d994a219f3152e41a0afb92.setContent(html_83b693bea0394d20ba1cc73007910c8b);
+        
+
+        marker_d7eab7044eb0495ea149d9aaec72d2c4.bindPopup(popup_cae23eb36d994a219f3152e41a0afb92)
+        ;
+
+        
+    
+    
+            var marker_16b024c7c3cb41e2a5b4a3cf50ada09b = L.marker(
+                [37.53633713111725, 127.06381347897481],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_fe6838c1cbf84fa581d7979987387764 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_16b024c7c3cb41e2a5b4a3cf50ada09b.setIcon(icon_fe6838c1cbf84fa581d7979987387764);
+        
+    
+        var popup_de7c55f1870d441eb145689612a59213 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed99e5299108451ca76d8084cdc0e559 = $(`<div id="html_ed99e5299108451ca76d8084cdc0e559" style="width: 100.0%; height: 100.0%;">둘리PC</div>`)[0];
+            popup_de7c55f1870d441eb145689612a59213.setContent(html_ed99e5299108451ca76d8084cdc0e559);
+        
+
+        marker_16b024c7c3cb41e2a5b4a3cf50ada09b.bindPopup(popup_de7c55f1870d441eb145689612a59213)
+        ;
+
+        
+    
+    
+            var marker_f55079a91d52424297c7986ea34f9f04 = L.marker(
+                [37.5347910343571, 127.067029923371],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_75791abb050d4cb3989bef6493f96d81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_f55079a91d52424297c7986ea34f9f04.setIcon(icon_75791abb050d4cb3989bef6493f96d81);
+        
+    
+        var popup_41f87c99d0e243ed951f3e76251c1fe5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2fa331aa523b4465aea499c0192a2925 = $(`<div id="html_2fa331aa523b4465aea499c0192a2925" style="width: 100.0%; height: 100.0%;">몽키타운PC방 구의점</div>`)[0];
+            popup_41f87c99d0e243ed951f3e76251c1fe5.setContent(html_2fa331aa523b4465aea499c0192a2925);
+        
+
+        marker_f55079a91d52424297c7986ea34f9f04.bindPopup(popup_41f87c99d0e243ed951f3e76251c1fe5)
+        ;
+
+        
+    
+    
+            var marker_bf185bda6b8a46b1be631bce8ed48db1 = L.marker(
+                [37.539730276367, 127.070202532858],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_b0fc521734fc424886041cbafd476ccc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_bf185bda6b8a46b1be631bce8ed48db1.setIcon(icon_b0fc521734fc424886041cbafd476ccc);
+        
+    
+        var popup_3889dced95e146bc8895af04a173ddd1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_637b0712ee764453ae1b86b04e09f77b = $(`<div id="html_637b0712ee764453ae1b86b04e09f77b" style="width: 100.0%; height: 100.0%;">5번출구피씨방</div>`)[0];
+            popup_3889dced95e146bc8895af04a173ddd1.setContent(html_637b0712ee764453ae1b86b04e09f77b);
+        
+
+        marker_bf185bda6b8a46b1be631bce8ed48db1.bindPopup(popup_3889dced95e146bc8895af04a173ddd1)
+        ;
+
+        
+    
+    
+            var marker_80065375f01a4f6899efd5c6056afdc8 = L.marker(
+                [37.5343385500058, 127.081633813924],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_781f6f195c41477ab6834b11242cc108 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_80065375f01a4f6899efd5c6056afdc8.setIcon(icon_781f6f195c41477ab6834b11242cc108);
+        
+    
+        var popup_7d5378e9750a4fbd88bdf7263c57ee5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f84132f2a8364887adfeb2e2eacd0434 = $(`<div id="html_f84132f2a8364887adfeb2e2eacd0434" style="width: 100.0%; height: 100.0%;">웹팰리스</div>`)[0];
+            popup_7d5378e9750a4fbd88bdf7263c57ee5d.setContent(html_f84132f2a8364887adfeb2e2eacd0434);
+        
+
+        marker_80065375f01a4f6899efd5c6056afdc8.bindPopup(popup_7d5378e9750a4fbd88bdf7263c57ee5d)
+        ;
+
+        
+    
+    
+            var marker_e7b00eafb70840cf8d8c3d03ff610f08 = L.marker(
+                [37.5358227654082, 127.08254510686],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_bae880f656b243dca1d778db554b6456 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_e7b00eafb70840cf8d8c3d03ff610f08.setIcon(icon_bae880f656b243dca1d778db554b6456);
+        
+    
+        var popup_8add799dcb124beb8d006710c97c0b2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ee349b6b197448db2fdd6dedacd84f1 = $(`<div id="html_8ee349b6b197448db2fdd6dedacd84f1" style="width: 100.0%; height: 100.0%;">비원PC방</div>`)[0];
+            popup_8add799dcb124beb8d006710c97c0b2c.setContent(html_8ee349b6b197448db2fdd6dedacd84f1);
+        
+
+        marker_e7b00eafb70840cf8d8c3d03ff610f08.bindPopup(popup_8add799dcb124beb8d006710c97c0b2c)
+        ;
+
+        
+    
+    
+            var marker_fffa8361928a48b79f96ade0eb10dc72 = L.marker(
+                [37.5389790790464, 127.066685174965],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_92729d97365848258de7e5bca856dcc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_fffa8361928a48b79f96ade0eb10dc72.setIcon(icon_92729d97365848258de7e5bca856dcc8);
+        
+    
+        var popup_59b472640bbf4e64a301e5d18ec00679 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd6fffcae9424559914d119890c8c93e = $(`<div id="html_fd6fffcae9424559914d119890c8c93e" style="width: 100.0%; height: 100.0%;">동남서북 마장관</div>`)[0];
+            popup_59b472640bbf4e64a301e5d18ec00679.setContent(html_fd6fffcae9424559914d119890c8c93e);
+        
+
+        marker_fffa8361928a48b79f96ade0eb10dc72.bindPopup(popup_59b472640bbf4e64a301e5d18ec00679)
+        ;
+
+        
+    
+    
+            var marker_ae8e83bf23e2402fa4292910a984a995 = L.marker(
+                [37.532641889249, 127.085560145792],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_a8a11aeeaa1e497bbe0c5541273528fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_ae8e83bf23e2402fa4292910a984a995.setIcon(icon_a8a11aeeaa1e497bbe0c5541273528fb);
+        
+    
+        var popup_f5f5444f62f84ed6833d6aa1f5946482 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_194dbf7ef1a84ec3bb7a9ea056d3a16e = $(`<div id="html_194dbf7ef1a84ec3bb7a9ea056d3a16e" style="width: 100.0%; height: 100.0%;">아이벅스PC방</div>`)[0];
+            popup_f5f5444f62f84ed6833d6aa1f5946482.setContent(html_194dbf7ef1a84ec3bb7a9ea056d3a16e);
+        
+
+        marker_ae8e83bf23e2402fa4292910a984a995.bindPopup(popup_f5f5444f62f84ed6833d6aa1f5946482)
+        ;
+
+        
+    
+    
+            var marker_26d236d23f0e415fb807552b8c03af16 = L.marker(
+                [37.5371484796291, 127.082053253047],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_c06dd68790b4483fa3f17c26ca2a354d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_26d236d23f0e415fb807552b8c03af16.setIcon(icon_c06dd68790b4483fa3f17c26ca2a354d);
+        
+    
+        var popup_9e887c0530324015af54a7933c7cd66d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0adda2d6995141fa9b384f610ced709e = $(`<div id="html_0adda2d6995141fa9b384f610ced709e" style="width: 100.0%; height: 100.0%;">구의게임랜드</div>`)[0];
+            popup_9e887c0530324015af54a7933c7cd66d.setContent(html_0adda2d6995141fa9b384f610ced709e);
+        
+
+        marker_26d236d23f0e415fb807552b8c03af16.bindPopup(popup_9e887c0530324015af54a7933c7cd66d)
+        ;
+
+        
+    
+    
+            var marker_1c9096be95e04984aad194b8cc2b1762 = L.marker(
+                [37.5408085864041, 127.068990562922],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_1343a6da2e0647b99ab20c44b16ccb3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_1c9096be95e04984aad194b8cc2b1762.setIcon(icon_1343a6da2e0647b99ab20c44b16ccb3f);
+        
+    
+        var popup_6afd468f20414f168dbf0c2d2f960841 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf77389c75a04dec8094bda3b5ab3602 = $(`<div id="html_bf77389c75a04dec8094bda3b5ab3602" style="width: 100.0%; height: 100.0%;">포포PC방 건대점</div>`)[0];
+            popup_6afd468f20414f168dbf0c2d2f960841.setContent(html_bf77389c75a04dec8094bda3b5ab3602);
+        
+
+        marker_1c9096be95e04984aad194b8cc2b1762.bindPopup(popup_6afd468f20414f168dbf0c2d2f960841)
+        ;
+
+        
+    
+    
+            var marker_43c8cf023015401c86cb1711bbde6b5b = L.marker(
+                [37.5426562065127, 127.071066378215],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_4bbdab0caafb47ccbfc7f64d8325a6e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_43c8cf023015401c86cb1711bbde6b5b.setIcon(icon_4bbdab0caafb47ccbfc7f64d8325a6e6);
+        
+    
+        var popup_52ff992e58474b498ab6e9bd1c81d446 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2ae40609fb54619955171df111fa1e1 = $(`<div id="html_f2ae40609fb54619955171df111fa1e1" style="width: 100.0%; height: 100.0%;">게임천국 2호점</div>`)[0];
+            popup_52ff992e58474b498ab6e9bd1c81d446.setContent(html_f2ae40609fb54619955171df111fa1e1);
+        
+
+        marker_43c8cf023015401c86cb1711bbde6b5b.bindPopup(popup_52ff992e58474b498ab6e9bd1c81d446)
+        ;
+
+        
+    
+    
+            var marker_44b00db9e2a94097a443f2d6caf1eb85 = L.marker(
+                [37.5404979734985, 127.070126310131],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_d55b4c01766e42598383c24d5240d388 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_44b00db9e2a94097a443f2d6caf1eb85.setIcon(icon_d55b4c01766e42598383c24d5240d388);
+        
+    
+        var popup_72e9ac376c554bc0b8fe97c25fc7e4ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0753feaf7c5434096c02a38f6fd8e52 = $(`<div id="html_f0753feaf7c5434096c02a38f6fd8e52" style="width: 100.0%; height: 100.0%;">비원피씨방 건대2호점</div>`)[0];
+            popup_72e9ac376c554bc0b8fe97c25fc7e4ee.setContent(html_f0753feaf7c5434096c02a38f6fd8e52);
+        
+
+        marker_44b00db9e2a94097a443f2d6caf1eb85.bindPopup(popup_72e9ac376c554bc0b8fe97c25fc7e4ee)
+        ;
+
+        
+    
+    
+            var marker_1974fdeb1f0b485199cc8720b91b0c16 = L.marker(
+                [37.5426919135456, 127.071617472343],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_80ce8bd516814c28b41985a3ec33c170 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_1974fdeb1f0b485199cc8720b91b0c16.setIcon(icon_80ce8bd516814c28b41985a3ec33c170);
+        
+    
+        var popup_e1803f94b04b4824b6a9cc982dec5d46 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0a01bed3f89411da20b46ee72227062 = $(`<div id="html_a0a01bed3f89411da20b46ee72227062" style="width: 100.0%; height: 100.0%;">쌈바플스방</div>`)[0];
+            popup_e1803f94b04b4824b6a9cc982dec5d46.setContent(html_a0a01bed3f89411da20b46ee72227062);
+        
+
+        marker_1974fdeb1f0b485199cc8720b91b0c16.bindPopup(popup_e1803f94b04b4824b6a9cc982dec5d46)
+        ;
+
+        
+    
+    
+            var marker_8b77cec10c974554b98bcc19c9d7b8fe = L.marker(
+                [37.5474327006702, 127.072061073232],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_f87be7b31aac4f11907aa1ec1bceb285 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_8b77cec10c974554b98bcc19c9d7b8fe.setIcon(icon_f87be7b31aac4f11907aa1ec1bceb285);
+        
+    
+        var popup_63a7900c15ff4412a057d539ba4fd7f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8134949fd224965847b9f13c37e6269 = $(`<div id="html_d8134949fd224965847b9f13c37e6269" style="width: 100.0%; height: 100.0%;">지프로pc방</div>`)[0];
+            popup_63a7900c15ff4412a057d539ba4fd7f2.setContent(html_d8134949fd224965847b9f13c37e6269);
+        
+
+        marker_8b77cec10c974554b98bcc19c9d7b8fe.bindPopup(popup_63a7900c15ff4412a057d539ba4fd7f2)
+        ;
+
+        
+    
+    
+            var marker_b5d554224e4d4bdc9903492fc9e152e2 = L.marker(
+                [37.547097798756, 127.070116649811],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_e3d17a9885e54c44a9595e1799230721 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_b5d554224e4d4bdc9903492fc9e152e2.setIcon(icon_e3d17a9885e54c44a9595e1799230721);
+        
+    
+        var popup_afee861c52eb49bfae804e8c0d5a0376 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_751883da131f40a9930dd2fe4b616ced = $(`<div id="html_751883da131f40a9930dd2fe4b616ced" style="width: 100.0%; height: 100.0%;">앤탑PC존</div>`)[0];
+            popup_afee861c52eb49bfae804e8c0d5a0376.setContent(html_751883da131f40a9930dd2fe4b616ced);
+        
+
+        marker_b5d554224e4d4bdc9903492fc9e152e2.bindPopup(popup_afee861c52eb49bfae804e8c0d5a0376)
+        ;
+
+        
+    
+    
+            var marker_0b37cde86a8647a9b33e88865308f9de = L.marker(
+                [37.5419857084296, 127.071322599069],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_1c57c0cc4b7e4c72bf3b48f8cb0a358d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_0b37cde86a8647a9b33e88865308f9de.setIcon(icon_1c57c0cc4b7e4c72bf3b48f8cb0a358d);
+        
+    
+        var popup_95798d20982a49479b04466dbb52365f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e5b94909b874b5092bdddfcbabf9e34 = $(`<div id="html_9e5b94909b874b5092bdddfcbabf9e34" style="width: 100.0%; height: 100.0%;">E스포츠센터 건대점</div>`)[0];
+            popup_95798d20982a49479b04466dbb52365f.setContent(html_9e5b94909b874b5092bdddfcbabf9e34);
+        
+
+        marker_0b37cde86a8647a9b33e88865308f9de.bindPopup(popup_95798d20982a49479b04466dbb52365f)
+        ;
+
+        
+    
+    
+            var marker_07187b415e354d028a44ab7ecd6d9746 = L.marker(
+                [37.5470653634909, 127.070115487824],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_87bd469f3c624de6bf7b1e5b353d119b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_07187b415e354d028a44ab7ecd6d9746.setIcon(icon_87bd469f3c624de6bf7b1e5b353d119b);
+        
+    
+        var popup_45182f5093854513bd00f3747c196f5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51c5099d3b5b47688ed5522b84c09995 = $(`<div id="html_51c5099d3b5b47688ed5522b84c09995" style="width: 100.0%; height: 100.0%;">비원피씨존</div>`)[0];
+            popup_45182f5093854513bd00f3747c196f5e.setContent(html_51c5099d3b5b47688ed5522b84c09995);
+        
+
+        marker_07187b415e354d028a44ab7ecd6d9746.bindPopup(popup_45182f5093854513bd00f3747c196f5e)
+        ;
+
+        
+    
+    
+            var marker_f936e6c7fa024cab85d951a389958fee = L.marker(
+                [37.5452298014105, 127.076295583995],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_5163ab54c195437583a0e463d1d7102b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_f936e6c7fa024cab85d951a389958fee.setIcon(icon_5163ab54c195437583a0e463d1d7102b);
+        
+    
+        var popup_1c54a5845ebf4a109e57982b3a0e853d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bd522673f2c4544a25bd3aefb6e1bb7 = $(`<div id="html_6bd522673f2c4544a25bd3aefb6e1bb7" style="width: 100.0%; height: 100.0%;">제노PC존 건대후문점</div>`)[0];
+            popup_1c54a5845ebf4a109e57982b3a0e853d.setContent(html_6bd522673f2c4544a25bd3aefb6e1bb7);
+        
+
+        marker_f936e6c7fa024cab85d951a389958fee.bindPopup(popup_1c54a5845ebf4a109e57982b3a0e853d)
+        ;
+
+        
+    
+    
+            var marker_fddba475a4f246d086deeab521f0a768 = L.marker(
+                [37.542780009394, 127.06892901315],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_5256e3d2d9fa46638f474885ab804252 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_fddba475a4f246d086deeab521f0a768.setIcon(icon_5256e3d2d9fa46638f474885ab804252);
+        
+    
+        var popup_8c712d49d9084a469a039541534ca0f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_703f655cad744fb9b92a46fc85043bee = $(`<div id="html_703f655cad744fb9b92a46fc85043bee" style="width: 100.0%; height: 100.0%;">팝콘PC방 건대점</div>`)[0];
+            popup_8c712d49d9084a469a039541534ca0f7.setContent(html_703f655cad744fb9b92a46fc85043bee);
+        
+
+        marker_fddba475a4f246d086deeab521f0a768.bindPopup(popup_8c712d49d9084a469a039541534ca0f7)
+        ;
+
+        
+    
+    
+            var marker_c4c31a27707b4829b69a38f910bcb92b = L.marker(
+                [37.5403535710165, 127.070533516757],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_45b536f7e6a5449cadc2513b4df1a712 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_c4c31a27707b4829b69a38f910bcb92b.setIcon(icon_45b536f7e6a5449cadc2513b4df1a712);
+        
+    
+        var popup_e45709d068374558bc0132141f2694d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8976ddee8ac4e92928b83a54b6d0871 = $(`<div id="html_c8976ddee8ac4e92928b83a54b6d0871" style="width: 100.0%; height: 100.0%;">x zone PC방</div>`)[0];
+            popup_e45709d068374558bc0132141f2694d4.setContent(html_c8976ddee8ac4e92928b83a54b6d0871);
+        
+
+        marker_c4c31a27707b4829b69a38f910bcb92b.bindPopup(popup_e45709d068374558bc0132141f2694d4)
+        ;
+
+        
+    
+    
+            var marker_193ddda69cc043f4aae1f7cdca5e1058 = L.marker(
+                [37.5463690362199, 127.075717367872],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_cf360492b8d54d3f8944ef30acd74cac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_193ddda69cc043f4aae1f7cdca5e1058.setIcon(icon_cf360492b8d54d3f8944ef30acd74cac);
+        
+    
+        var popup_1ac794749a7d47bb952453dee5c6d9ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba4c1e6c782a4a969b74fc1f3bde4170 = $(`<div id="html_ba4c1e6c782a4a969b74fc1f3bde4170" style="width: 100.0%; height: 100.0%;">아이센스PC 건대점</div>`)[0];
+            popup_1ac794749a7d47bb952453dee5c6d9ce.setContent(html_ba4c1e6c782a4a969b74fc1f3bde4170);
+        
+
+        marker_193ddda69cc043f4aae1f7cdca5e1058.bindPopup(popup_1ac794749a7d47bb952453dee5c6d9ce)
+        ;
+
+        
+    
+    
+            var marker_f174766fd22941eab09d9a8fcf118c5a = L.marker(
+                [37.5412810653799, 127.068379977896],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_edbe90ccdf7b4d0780caf65e63293695 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_f174766fd22941eab09d9a8fcf118c5a.setIcon(icon_edbe90ccdf7b4d0780caf65e63293695);
+        
+    
+        var popup_5ab7ba43a7454f2c9fb7e1b4c81d1f33 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_390b056c171741d8865b26dbeaf7392b = $(`<div id="html_390b056c171741d8865b26dbeaf7392b" style="width: 100.0%; height: 100.0%;">리얼배틀그라운드 건대벙커</div>`)[0];
+            popup_5ab7ba43a7454f2c9fb7e1b4c81d1f33.setContent(html_390b056c171741d8865b26dbeaf7392b);
+        
+
+        marker_f174766fd22941eab09d9a8fcf118c5a.bindPopup(popup_5ab7ba43a7454f2c9fb7e1b4c81d1f33)
+        ;
+
+        
+    
+    
+            var marker_df215cbf9d0a410fad858ada859780bb = L.marker(
+                [37.5411227520439, 127.067924963549],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_1454a971eb084db99fe785c4cfe3261c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_df215cbf9d0a410fad858ada859780bb.setIcon(icon_1454a971eb084db99fe785c4cfe3261c);
+        
+    
+        var popup_d256087af0ca4b659e07ef1ccc497fb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fc6e443820446f69e76271ace0bb52a = $(`<div id="html_8fc6e443820446f69e76271ace0bb52a" style="width: 100.0%; height: 100.0%;">VR매직파크</div>`)[0];
+            popup_d256087af0ca4b659e07ef1ccc497fb9.setContent(html_8fc6e443820446f69e76271ace0bb52a);
+        
+
+        marker_df215cbf9d0a410fad858ada859780bb.bindPopup(popup_d256087af0ca4b659e07ef1ccc497fb9)
+        ;
+
+        
+    
+    
+            var marker_2c7be50714fb4f898c5d08f87c6e55c1 = L.marker(
+                [37.5410396839911, 127.068230397395],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_96aad65d5aa246b28e417b35c083e6f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_2c7be50714fb4f898c5d08f87c6e55c1.setIcon(icon_96aad65d5aa246b28e417b35c083e6f3);
+        
+    
+        var popup_d4bba3f03ce342d3ae94f0df698acfd8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_120c74fd3c6f4f6fa241809a29726dea = $(`<div id="html_120c74fd3c6f4f6fa241809a29726dea" style="width: 100.0%; height: 100.0%;">배드VR게임장 건대점</div>`)[0];
+            popup_d4bba3f03ce342d3ae94f0df698acfd8.setContent(html_120c74fd3c6f4f6fa241809a29726dea);
+        
+
+        marker_2c7be50714fb4f898c5d08f87c6e55c1.bindPopup(popup_d4bba3f03ce342d3ae94f0df698acfd8)
+        ;
+
+        
+    
+    
+            var marker_a6d47a164a7e458790f8b689a509a8d6 = L.marker(
+                [37.5418956413203, 127.071268199904],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_d16532145dea4484b85af479f88c227d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_a6d47a164a7e458790f8b689a509a8d6.setIcon(icon_d16532145dea4484b85af479f88c227d);
+        
+    
+        var popup_28b591d9603d4de6810579195ae0b6d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1741909cb667485cbc5bb2d2bf4c261c = $(`<div id="html_1741909cb667485cbc5bb2d2bf4c261c" style="width: 100.0%; height: 100.0%;">블루PC존</div>`)[0];
+            popup_28b591d9603d4de6810579195ae0b6d9.setContent(html_1741909cb667485cbc5bb2d2bf4c261c);
+        
+
+        marker_a6d47a164a7e458790f8b689a509a8d6.bindPopup(popup_28b591d9603d4de6810579195ae0b6d9)
+        ;
+
+        
+    
+    
+            var marker_9bf95547b41b460a942c87e9de322cef = L.marker(
+                [37.5431226102962, 127.068549128761],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_3771403ee39040ecaf1eb70970577479 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_9bf95547b41b460a942c87e9de322cef.setIcon(icon_3771403ee39040ecaf1eb70970577479);
+        
+    
+        var popup_2a22eb8df6834ced9c388c687e03320e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f6a7d27e85d4a5292affb7aa99acc2f = $(`<div id="html_9f6a7d27e85d4a5292affb7aa99acc2f" style="width: 100.0%; height: 100.0%;">뉴헌터PC방</div>`)[0];
+            popup_2a22eb8df6834ced9c388c687e03320e.setContent(html_9f6a7d27e85d4a5292affb7aa99acc2f);
+        
+
+        marker_9bf95547b41b460a942c87e9de322cef.bindPopup(popup_2a22eb8df6834ced9c388c687e03320e)
+        ;
+
+        
+    
+    
+            var marker_de7ff2721d85449fbc30e09247d08d20 = L.marker(
+                [37.5476364062857, 127.07193000196],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_8aa266f2e3cd423fb53d7791b76a9ed3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_de7ff2721d85449fbc30e09247d08d20.setIcon(icon_8aa266f2e3cd423fb53d7791b76a9ed3);
+        
+    
+        var popup_47a5a31a47d242e8804543027d4e0f86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5181e6d612c4aecbc1c807bfa9bce98 = $(`<div id="html_f5181e6d612c4aecbc1c807bfa9bce98" style="width: 100.0%; height: 100.0%;">슈퍼게임랜드</div>`)[0];
+            popup_47a5a31a47d242e8804543027d4e0f86.setContent(html_f5181e6d612c4aecbc1c807bfa9bce98);
+        
+
+        marker_de7ff2721d85449fbc30e09247d08d20.bindPopup(popup_47a5a31a47d242e8804543027d4e0f86)
+        ;
+
+        
+    
+    
+            var marker_bc567d962180463b88458437c4d0e70a = L.marker(
+                [37.5411263521354, 127.067931755916],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_4dc3a070ffb54ba99113ac59bd2e9d6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_bc567d962180463b88458437c4d0e70a.setIcon(icon_4dc3a070ffb54ba99113ac59bd2e9d6e);
+        
+    
+        var popup_f55567b71c924c63ad2a8098c8b782eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9309bb3d0f844a38471b8c4e7adaf9d = $(`<div id="html_a9309bb3d0f844a38471b8c4e7adaf9d" style="width: 100.0%; height: 100.0%;">브라이트 건대점</div>`)[0];
+            popup_f55567b71c924c63ad2a8098c8b782eb.setContent(html_a9309bb3d0f844a38471b8c4e7adaf9d);
+        
+
+        marker_bc567d962180463b88458437c4d0e70a.bindPopup(popup_f55567b71c924c63ad2a8098c8b782eb)
+        ;
+
+        
+    
+    
+            var marker_9a6aaf53e61c42378a3e557e722bedbe = L.marker(
+                [37.5431407168857, 127.068399781092],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_645e0d3fed9a49c8851d92559a86ffc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_9a6aaf53e61c42378a3e557e722bedbe.setIcon(icon_645e0d3fed9a49c8851d92559a86ffc0);
+        
+    
+        var popup_cc36026660f04e0c92eab0daa8e3a10d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db407cb936b94ace988be0f8bc795b77 = $(`<div id="html_db407cb936b94ace988be0f8bc795b77" style="width: 100.0%; height: 100.0%;">클릭하세요PC방</div>`)[0];
+            popup_cc36026660f04e0c92eab0daa8e3a10d.setContent(html_db407cb936b94ace988be0f8bc795b77);
+        
+
+        marker_9a6aaf53e61c42378a3e557e722bedbe.bindPopup(popup_cc36026660f04e0c92eab0daa8e3a10d)
+        ;
+
+        
+    
+    
+            var marker_218ebfdfabd54bdc9ecd5ca684293dfe = L.marker(
+                [37.5452257715376, 127.076951895584],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_d14ba8f8e4034c9681b19444f5cd3bbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_218ebfdfabd54bdc9ecd5ca684293dfe.setIcon(icon_d14ba8f8e4034c9681b19444f5cd3bbb);
+        
+    
+        var popup_a0961b3e15fa49b99ece9886bf7aa954 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4b1ab15a1ae4c0b880d16801aa88635 = $(`<div id="html_d4b1ab15a1ae4c0b880d16801aa88635" style="width: 100.0%; height: 100.0%;">라임PC</div>`)[0];
+            popup_a0961b3e15fa49b99ece9886bf7aa954.setContent(html_d4b1ab15a1ae4c0b880d16801aa88635);
+        
+
+        marker_218ebfdfabd54bdc9ecd5ca684293dfe.bindPopup(popup_a0961b3e15fa49b99ece9886bf7aa954)
+        ;
+
+        
+    
+    
+            var marker_3355ef00e0ae4931aa3300916e65ead2 = L.marker(
+                [37.545751886686595, 127.07705654236413],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_2ceeecd55a3f4cc48cd6c48aa27f82e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_3355ef00e0ae4931aa3300916e65ead2.setIcon(icon_2ceeecd55a3f4cc48cd6c48aa27f82e8);
+        
+    
+        var popup_498c3206af8e41acb6bc78db4a894f1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_838e22cfbf9a4500973229345e120631 = $(`<div id="html_838e22cfbf9a4500973229345e120631" style="width: 100.0%; height: 100.0%;">나인브이알</div>`)[0];
+            popup_498c3206af8e41acb6bc78db4a894f1c.setContent(html_838e22cfbf9a4500973229345e120631);
+        
+
+        marker_3355ef00e0ae4931aa3300916e65ead2.bindPopup(popup_498c3206af8e41acb6bc78db4a894f1c)
+        ;
+
+        
+    
+    
+            var marker_9ef2eeb7dfb445a180ca2f6be0dc7913 = L.marker(
+                [37.5427043525548, 127.068882550327],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_d5624024cba44d1c9a32c233c65fc599 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_9ef2eeb7dfb445a180ca2f6be0dc7913.setIcon(icon_d5624024cba44d1c9a32c233c65fc599);
+        
+    
+        var popup_42586aa868274a2ab653d2e8f31a20b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88262e6f87294347a5e969b4359f7a66 = $(`<div id="html_88262e6f87294347a5e969b4359f7a66" style="width: 100.0%; height: 100.0%;">원PC카페</div>`)[0];
+            popup_42586aa868274a2ab653d2e8f31a20b0.setContent(html_88262e6f87294347a5e969b4359f7a66);
+        
+
+        marker_9ef2eeb7dfb445a180ca2f6be0dc7913.bindPopup(popup_42586aa868274a2ab653d2e8f31a20b0)
+        ;
+
+        
+    
+    
+            var marker_b953e3a9765445bdb0163c9e2fcd05cb = L.marker(
+                [37.5412052922396, 127.068533795153],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_c05870d5d59f4812a3307cf65f0b4fac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_b953e3a9765445bdb0163c9e2fcd05cb.setIcon(icon_c05870d5d59f4812a3307cf65f0b4fac);
+        
+    
+        var popup_e6c076ccea2048139dff81196a519751 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e69ffcbe803240a3b38a6660a066976c = $(`<div id="html_e69ffcbe803240a3b38a6660a066976c" style="width: 100.0%; height: 100.0%;">야구사격연습장</div>`)[0];
+            popup_e6c076ccea2048139dff81196a519751.setContent(html_e69ffcbe803240a3b38a6660a066976c);
+        
+
+        marker_b953e3a9765445bdb0163c9e2fcd05cb.bindPopup(popup_e6c076ccea2048139dff81196a519751)
+        ;
+
+        
+    
+    
+            var marker_cb435cb2464848e593528f1698a2c3bc = L.marker(
+                [37.5412558609839, 127.068339220199],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_af1ca3383a6a406f9a8baf7cc624b899 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_cb435cb2464848e593528f1698a2c3bc.setIcon(icon_af1ca3383a6a406f9a8baf7cc624b899);
+        
+    
+        var popup_c42049862e494734812f7bfd78789f24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbd208041bd4477c8618dfd13e8fbb7a = $(`<div id="html_cbd208041bd4477c8618dfd13e8fbb7a" style="width: 100.0%; height: 100.0%;">오렌지</div>`)[0];
+            popup_c42049862e494734812f7bfd78789f24.setContent(html_cbd208041bd4477c8618dfd13e8fbb7a);
+        
+
+        marker_cb435cb2464848e593528f1698a2c3bc.bindPopup(popup_c42049862e494734812f7bfd78789f24)
+        ;
+
+        
+    
+    
+            var marker_3adfd5a945fd445c888866eeb15fbc7f = L.marker(
+                [37.5413659875109, 127.071045917737],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_9343f2608fd541a4b697c78db8cccd4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_3adfd5a945fd445c888866eeb15fbc7f.setIcon(icon_9343f2608fd541a4b697c78db8cccd4e);
+        
+    
+        var popup_8e655be89fba49dbb08189de8e840394 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4cfdaeb142334471a17663ac2609d7e0 = $(`<div id="html_4cfdaeb142334471a17663ac2609d7e0" style="width: 100.0%; height: 100.0%;">ku PC방</div>`)[0];
+            popup_8e655be89fba49dbb08189de8e840394.setContent(html_4cfdaeb142334471a17663ac2609d7e0);
+        
+
+        marker_3adfd5a945fd445c888866eeb15fbc7f.bindPopup(popup_8e655be89fba49dbb08189de8e840394)
+        ;
+
+        
+    
+    
+            var marker_4198a6b2a09c4b33b9cf36fa9ae21602 = L.marker(
+                [37.5425922753372, 127.069485557516],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_8473aaf1918f4db4b9028db5f2232d97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_4198a6b2a09c4b33b9cf36fa9ae21602.setIcon(icon_8473aaf1918f4db4b9028db5f2232d97);
+        
+    
+        var popup_7f3ce981f1684e0db0bcb719ad6bad91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e9883f934b6465ea6b3b40ad50d1c94 = $(`<div id="html_5e9883f934b6465ea6b3b40ad50d1c94" style="width: 100.0%; height: 100.0%;">트루VR</div>`)[0];
+            popup_7f3ce981f1684e0db0bcb719ad6bad91.setContent(html_5e9883f934b6465ea6b3b40ad50d1c94);
+        
+
+        marker_4198a6b2a09c4b33b9cf36fa9ae21602.bindPopup(popup_7f3ce981f1684e0db0bcb719ad6bad91)
+        ;
+
+        
+    
+    
+            var marker_06aac81ba1ca4adda1a0616777d6281a = L.marker(
+                [37.5516174655015, 127.069679530251],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_0d9f030df6c04b778687443a558840a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_06aac81ba1ca4adda1a0616777d6281a.setIcon(icon_0d9f030df6c04b778687443a558840a1);
+        
+    
+        var popup_f6fee0090e32409ebc158c8930ca4333 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df7f8881d60b441a8c907a564c382ee8 = $(`<div id="html_df7f8881d60b441a8c907a564c382ee8" style="width: 100.0%; height: 100.0%;">클릭넷PC방</div>`)[0];
+            popup_f6fee0090e32409ebc158c8930ca4333.setContent(html_df7f8881d60b441a8c907a564c382ee8);
+        
+
+        marker_06aac81ba1ca4adda1a0616777d6281a.bindPopup(popup_f6fee0090e32409ebc158c8930ca4333)
+        ;
+
+        
+    
+    
+            var marker_adaa2c6b22914670ac2e69a079dc0d90 = L.marker(
+                [37.55125041864887, 127.07607086007151],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_0a57c3f5b4d1429a8aad4ed32031811c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_adaa2c6b22914670ac2e69a079dc0d90.setIcon(icon_0a57c3f5b4d1429a8aad4ed32031811c);
+        
+    
+        var popup_c41db2d515114492b1e14ed753794578 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4befac1bcaf34d3ca31e033b6b99e503 = $(`<div id="html_4befac1bcaf34d3ca31e033b6b99e503" style="width: 100.0%; height: 100.0%;">몽키PC방</div>`)[0];
+            popup_c41db2d515114492b1e14ed753794578.setContent(html_4befac1bcaf34d3ca31e033b6b99e503);
+        
+
+        marker_adaa2c6b22914670ac2e69a079dc0d90.bindPopup(popup_c41db2d515114492b1e14ed753794578)
+        ;
+
+        
+    
+    
+            var marker_03ec1965d4b9404eaf0ac865c7a52c62 = L.marker(
+                [37.5548920330723, 127.076409552153],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_5c1e2e1251134707abcd15ecf5bc2fa8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_03ec1965d4b9404eaf0ac865c7a52c62.setIcon(icon_5c1e2e1251134707abcd15ecf5bc2fa8);
+        
+    
+        var popup_5bd1f8a40f0a4b7c9a07943c9175ce84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20624d6a04bb47028da53d789af71648 = $(`<div id="html_20624d6a04bb47028da53d789af71648" style="width: 100.0%; height: 100.0%;">플라워PC방 군자점</div>`)[0];
+            popup_5bd1f8a40f0a4b7c9a07943c9175ce84.setContent(html_20624d6a04bb47028da53d789af71648);
+        
+
+        marker_03ec1965d4b9404eaf0ac865c7a52c62.bindPopup(popup_5bd1f8a40f0a4b7c9a07943c9175ce84)
+        ;
+
+        
+    
+    
+            var marker_fcea4b80fc0e4218b573aeaba1b1832e = L.marker(
+                [37.5543163580284, 127.074906045236],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_70e49d0afae940e496a205b4681b757d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_fcea4b80fc0e4218b573aeaba1b1832e.setIcon(icon_70e49d0afae940e496a205b4681b757d);
+        
+    
+        var popup_6f732e90296d45a98a79a4ec5c8b1162 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68761bdf28654513bebd35be65e21a0b = $(`<div id="html_68761bdf28654513bebd35be65e21a0b" style="width: 100.0%; height: 100.0%;">앤탑PC존</div>`)[0];
+            popup_6f732e90296d45a98a79a4ec5c8b1162.setContent(html_68761bdf28654513bebd35be65e21a0b);
+        
+
+        marker_fcea4b80fc0e4218b573aeaba1b1832e.bindPopup(popup_6f732e90296d45a98a79a4ec5c8b1162)
+        ;
+
+        
+    
+    
+            var marker_e84e6a0043b544dda93e47f511ebb9dd = L.marker(
+                [37.5512936125469, 127.07615464759],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_88f97b5c50d347e0b1b418065e543ee2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_e84e6a0043b544dda93e47f511ebb9dd.setIcon(icon_88f97b5c50d347e0b1b418065e543ee2);
+        
+    
+        var popup_271359f635694228aa76337519b4a70a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e0c1244f6084dfdb938e5976e8be762 = $(`<div id="html_8e0c1244f6084dfdb938e5976e8be762" style="width: 100.0%; height: 100.0%;">쓰리팝PC 세종대점</div>`)[0];
+            popup_271359f635694228aa76337519b4a70a.setContent(html_8e0c1244f6084dfdb938e5976e8be762);
+        
+
+        marker_e84e6a0043b544dda93e47f511ebb9dd.bindPopup(popup_271359f635694228aa76337519b4a70a)
+        ;
+
+        
+    
+    
+            var marker_2596be5ff3d24bb5bd9aaae278d89d21 = L.marker(
+                [37.554308809966116, 127.07544020768943],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_c931e52e7e6b45d99383fa8bb960c03b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_2596be5ff3d24bb5bd9aaae278d89d21.setIcon(icon_c931e52e7e6b45d99383fa8bb960c03b);
+        
+    
+        var popup_eb33186e3a8d408e8b7f10e333fb5734 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_114a41a7fefa428885b4b1bc352c0a2e = $(`<div id="html_114a41a7fefa428885b4b1bc352c0a2e" style="width: 100.0%; height: 100.0%;">인터월드pc방</div>`)[0];
+            popup_eb33186e3a8d408e8b7f10e333fb5734.setContent(html_114a41a7fefa428885b4b1bc352c0a2e);
+        
+
+        marker_2596be5ff3d24bb5bd9aaae278d89d21.bindPopup(popup_eb33186e3a8d408e8b7f10e333fb5734)
+        ;
+
+        
+    
+    
+            var marker_d9d07f1773ce47ef94f2b1542b703d26 = L.marker(
+                [37.5517643521373, 127.069638926603],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_ccb1a8912e374172959423f3e69c791d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_d9d07f1773ce47ef94f2b1542b703d26.setIcon(icon_ccb1a8912e374172959423f3e69c791d);
+        
+    
+        var popup_de649ddcf7564593ae6956e4e466a598 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ed1e47894fd499a9ed395db9d95a919 = $(`<div id="html_7ed1e47894fd499a9ed395db9d95a919" style="width: 100.0%; height: 100.0%;">클릭넷PC방</div>`)[0];
+            popup_de649ddcf7564593ae6956e4e466a598.setContent(html_7ed1e47894fd499a9ed395db9d95a919);
+        
+
+        marker_d9d07f1773ce47ef94f2b1542b703d26.bindPopup(popup_de649ddcf7564593ae6956e4e466a598)
+        ;
+
+        
+    
+    
+            var marker_1fafdcc2c62f4c908d86664a75066b6f = L.marker(
+                [37.5543088157504, 127.075431153966],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_4d03d6c659204139abd6055e5167b5e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_1fafdcc2c62f4c908d86664a75066b6f.setIcon(icon_4d03d6c659204139abd6055e5167b5e7);
+        
+    
+        var popup_aecfb8549c344ca1ad9da5c2cf36fed4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2cdc9a8a0ef476c829c9afd5ba5b602 = $(`<div id="html_b2cdc9a8a0ef476c829c9afd5ba5b602" style="width: 100.0%; height: 100.0%;">사이버게이트</div>`)[0];
+            popup_aecfb8549c344ca1ad9da5c2cf36fed4.setContent(html_b2cdc9a8a0ef476c829c9afd5ba5b602);
+        
+
+        marker_1fafdcc2c62f4c908d86664a75066b6f.bindPopup(popup_aecfb8549c344ca1ad9da5c2cf36fed4)
+        ;
+
+        
+    
+    
+            var marker_35d98c0066c14c11a479ccd7484bd9b9 = L.marker(
+                [37.5542947513272, 127.074878862428],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_15d8a2239f8c4ac6a0c9065a6c106d96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_35d98c0066c14c11a479ccd7484bd9b9.setIcon(icon_15d8a2239f8c4ac6a0c9065a6c106d96);
+        
+    
+        var popup_fb9597b3817946d38d6b9ed8848b8356 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c9f1f72d39d439ab68788845bdc1854 = $(`<div id="html_6c9f1f72d39d439ab68788845bdc1854" style="width: 100.0%; height: 100.0%;">누리터 PC방 군자점</div>`)[0];
+            popup_fb9597b3817946d38d6b9ed8848b8356.setContent(html_6c9f1f72d39d439ab68788845bdc1854);
+        
+
+        marker_35d98c0066c14c11a479ccd7484bd9b9.bindPopup(popup_fb9597b3817946d38d6b9ed8848b8356)
+        ;
+
+        
+    
+    
+            var marker_6951126af50e4260befdce17027d5605 = L.marker(
+                [37.5636624479222, 127.089104368169],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_aaa9d0debd7344c4a190d3c5353e7ede = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6951126af50e4260befdce17027d5605.setIcon(icon_aaa9d0debd7344c4a190d3c5353e7ede);
+        
+    
+        var popup_74c5c02f6064416290a9a2ae8491de4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b660bdd781fd4df5ab61f61d874007e5 = $(`<div id="html_b660bdd781fd4df5ab61f61d874007e5" style="width: 100.0%; height: 100.0%;">대원외국어고등학교</div>`)[0];
+            popup_74c5c02f6064416290a9a2ae8491de4e.setContent(html_b660bdd781fd4df5ab61f61d874007e5);
+        
+
+        marker_6951126af50e4260befdce17027d5605.bindPopup(popup_74c5c02f6064416290a9a2ae8491de4e)
+        ;
+
+        
+    
+    
+            var marker_3cddc749b2ec4b7faed66dd3caa33b90 = L.marker(
+                [37.5631647765463, 127.089529351024],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_2e90436c5ea7464da9cfe1e66571c6ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3cddc749b2ec4b7faed66dd3caa33b90.setIcon(icon_2e90436c5ea7464da9cfe1e66571c6ca);
+        
+    
+        var popup_b2e518e162554b8d8e0883d617241b89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d53458363e14c839f5e563c96f786a9 = $(`<div id="html_8d53458363e14c839f5e563c96f786a9" style="width: 100.0%; height: 100.0%;">대원고등학교</div>`)[0];
+            popup_b2e518e162554b8d8e0883d617241b89.setContent(html_8d53458363e14c839f5e563c96f786a9);
+        
+
+        marker_3cddc749b2ec4b7faed66dd3caa33b90.bindPopup(popup_b2e518e162554b8d8e0883d617241b89)
+        ;
+
+        
+    
+    
+            var marker_a450f2ce02c84ef98cac96622e0732c7 = L.marker(
+                [37.5624620790373, 127.089424380914],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_386677cd7fd14b1bbce37bbe03a9e319 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a450f2ce02c84ef98cac96622e0732c7.setIcon(icon_386677cd7fd14b1bbce37bbe03a9e319);
+        
+    
+        var popup_26345dd256224df8b502ca5179c1159d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ea1820728b343bdbf4d0d19bb1d5949 = $(`<div id="html_2ea1820728b343bdbf4d0d19bb1d5949" style="width: 100.0%; height: 100.0%;">대원여자고등학교</div>`)[0];
+            popup_26345dd256224df8b502ca5179c1159d.setContent(html_2ea1820728b343bdbf4d0d19bb1d5949);
+        
+
+        marker_a450f2ce02c84ef98cac96622e0732c7.bindPopup(popup_26345dd256224df8b502ca5179c1159d)
+        ;
+
+        
+    
+    
+            var marker_ba64bc161935492780e807976626aba1 = L.marker(
+                [37.563885631132, 127.089453247136],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_cf6e9851493c4120a3b071093cc22e7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ba64bc161935492780e807976626aba1.setIcon(icon_cf6e9851493c4120a3b071093cc22e7a);
+        
+    
+        var popup_c86b5fd980d64e82a272a47a7e92db52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8d4d3186f6b4fae9e5169ee12f15b06 = $(`<div id="html_b8d4d3186f6b4fae9e5169ee12f15b06" style="width: 100.0%; height: 100.0%;">대원국제중학교</div>`)[0];
+            popup_c86b5fd980d64e82a272a47a7e92db52.setContent(html_b8d4d3186f6b4fae9e5169ee12f15b06);
+        
+
+        marker_ba64bc161935492780e807976626aba1.bindPopup(popup_c86b5fd980d64e82a272a47a7e92db52)
+        ;
+
+        
+    
+    
+            var marker_49cd286e3d1844148adc386b48d57f9d = L.marker(
+                [37.54992721317203, 127.0872728484992],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_a19f596b34c54835856db5bec315f13e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_49cd286e3d1844148adc386b48d57f9d.setIcon(icon_a19f596b34c54835856db5bec315f13e);
+        
+    
+        var popup_7157e3780baa496da406a31e8c7756ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d0c5ff59d4a4111b7f6c7bad93e3ceb = $(`<div id="html_1d0c5ff59d4a4111b7f6c7bad93e3ceb" style="width: 100.0%; height: 100.0%;">선화예술중학교</div>`)[0];
+            popup_7157e3780baa496da406a31e8c7756ae.setContent(html_1d0c5ff59d4a4111b7f6c7bad93e3ceb);
+        
+
+        marker_49cd286e3d1844148adc386b48d57f9d.bindPopup(popup_7157e3780baa496da406a31e8c7756ae)
+        ;
+
+        
+    
+    
+            var marker_df246dd7ee7a4adab6ef99b9b262feed = L.marker(
+                [37.5500837218756, 127.087630633061],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_530dde80106644babc7ad40c53731881 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_df246dd7ee7a4adab6ef99b9b262feed.setIcon(icon_530dde80106644babc7ad40c53731881);
+        
+    
+        var popup_3e9f00f59d094891af891ca03a498145 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6da7c1ee51184765824e2979fac1a2e6 = $(`<div id="html_6da7c1ee51184765824e2979fac1a2e6" style="width: 100.0%; height: 100.0%;">선화예술고등학교</div>`)[0];
+            popup_3e9f00f59d094891af891ca03a498145.setContent(html_6da7c1ee51184765824e2979fac1a2e6);
+        
+
+        marker_df246dd7ee7a4adab6ef99b9b262feed.bindPopup(popup_3e9f00f59d094891af891ca03a498145)
+        ;
+
+        
+    
+    
+            var marker_af69bd21d8284d689b132e9bf351c838 = L.marker(
+                [37.5432654113521, 127.08702519396182],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_04a51e9b68e9403cac42301d48fdc29b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_af69bd21d8284d689b132e9bf351c838.setIcon(icon_04a51e9b68e9403cac42301d48fdc29b);
+        
+    
+        var popup_0e308fcdc2f845659c2305784a24d526 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_584cefc8503d433f9398c8d45463b26f = $(`<div id="html_584cefc8503d433f9398c8d45463b26f" style="width: 100.0%; height: 100.0%;">동국대학교 사범대학 부속여자고등학교</div>`)[0];
+            popup_0e308fcdc2f845659c2305784a24d526.setContent(html_584cefc8503d433f9398c8d45463b26f);
+        
+
+        marker_af69bd21d8284d689b132e9bf351c838.bindPopup(popup_0e308fcdc2f845659c2305784a24d526)
+        ;
+
+        
+    
+    
+            var marker_f5df5e9c3f4740bb9c5b375be9a339de = L.marker(
+                [37.5424939226997, 127.087341127698],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_385262ff7f474caf8d40ea164cf66f7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f5df5e9c3f4740bb9c5b375be9a339de.setIcon(icon_385262ff7f474caf8d40ea164cf66f7b);
+        
+    
+        var popup_6c6f7551f0094d18a3152bb8e103c2a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9edf222a49d4471aab8dacce2b26c38 = $(`<div id="html_b9edf222a49d4471aab8dacce2b26c38" style="width: 100.0%; height: 100.0%;">동국대학교 사범대학부속여자중학교</div>`)[0];
+            popup_6c6f7551f0094d18a3152bb8e103c2a4.setContent(html_b9edf222a49d4471aab8dacce2b26c38);
+        
+
+        marker_f5df5e9c3f4740bb9c5b375be9a339de.bindPopup(popup_6c6f7551f0094d18a3152bb8e103c2a4)
+        ;
+
+        
+    
+    
+            var marker_fa85d9b5c01b4017b511c66148b8abe2 = L.marker(
+                [37.5413869612066, 127.101529105077],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_1018eea1454640929e22840b3bd5adf9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fa85d9b5c01b4017b511c66148b8abe2.setIcon(icon_1018eea1454640929e22840b3bd5adf9);
+        
+    
+        var popup_c2c7f5d745c94c2391b6921ab4dfb9b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c46582b7f1b488f8efe0e5e0a534673 = $(`<div id="html_4c46582b7f1b488f8efe0e5e0a534673" style="width: 100.0%; height: 100.0%;">광남고등학교</div>`)[0];
+            popup_c2c7f5d745c94c2391b6921ab4dfb9b4.setContent(html_4c46582b7f1b488f8efe0e5e0a534673);
+        
+
+        marker_fa85d9b5c01b4017b511c66148b8abe2.bindPopup(popup_c2c7f5d745c94c2391b6921ab4dfb9b4)
+        ;
+
+        
+    
+    
+            var marker_31f99534c2f546eb90fe198054b7575e = L.marker(
+                [37.5472972737522, 127.101808707054],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_52da446bd30e46f3b34b2ea9824a7ebc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_31f99534c2f546eb90fe198054b7575e.setIcon(icon_52da446bd30e46f3b34b2ea9824a7ebc);
+        
+    
+        var popup_f72ed13f18b14c13bac94a91feb82ce0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5c38fb9e15144a8abadece89496b395 = $(`<div id="html_a5c38fb9e15144a8abadece89496b395" style="width: 100.0%; height: 100.0%;">광장중학교</div>`)[0];
+            popup_f72ed13f18b14c13bac94a91feb82ce0.setContent(html_a5c38fb9e15144a8abadece89496b395);
+        
+
+        marker_31f99534c2f546eb90fe198054b7575e.bindPopup(popup_f72ed13f18b14c13bac94a91feb82ce0)
+        ;
+
+        
+    
+    
+            var marker_79dc02f0a98c4ac4938b4d74795242c4 = L.marker(
+                [37.54045812903372, 127.10141469495024],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_2ad44e16729b41d885d3999b02aaf3cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_79dc02f0a98c4ac4938b4d74795242c4.setIcon(icon_2ad44e16729b41d885d3999b02aaf3cf);
+        
+    
+        var popup_ba3b106c3e794e36a5a96b37f304563c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62afc4b8bdd04134a787eb76e8a1a710 = $(`<div id="html_62afc4b8bdd04134a787eb76e8a1a710" style="width: 100.0%; height: 100.0%;">광남중학교</div>`)[0];
+            popup_ba3b106c3e794e36a5a96b37f304563c.setContent(html_62afc4b8bdd04134a787eb76e8a1a710);
+        
+
+        marker_79dc02f0a98c4ac4938b4d74795242c4.bindPopup(popup_ba3b106c3e794e36a5a96b37f304563c)
+        ;
+
+        
+    
+    
+            var marker_4fa4d9f8a33645c78a028b290d92f1fc = L.marker(
+                [37.5450730890035, 127.0981665329],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_5751b53b2dce48ef823c5fc8ee5509f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4fa4d9f8a33645c78a028b290d92f1fc.setIcon(icon_5751b53b2dce48ef823c5fc8ee5509f4);
+        
+    
+        var popup_516c41cfef5644f884b9822bd9056886 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_883effa0c72e4f35bace25163e7bd175 = $(`<div id="html_883effa0c72e4f35bace25163e7bd175" style="width: 100.0%; height: 100.0%;">양진중학교</div>`)[0];
+            popup_516c41cfef5644f884b9822bd9056886.setContent(html_883effa0c72e4f35bace25163e7bd175);
+        
+
+        marker_4fa4d9f8a33645c78a028b290d92f1fc.bindPopup(popup_516c41cfef5644f884b9822bd9056886)
+        ;
+
+        
+    
+    
+            var marker_bf6c2f5dc9694802bcd2c61aefaee820 = L.marker(
+                [37.5355505392486, 127.074606675947],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_ffbb89b5a01249c7aa98b3ab2e40edf5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bf6c2f5dc9694802bcd2c61aefaee820.setIcon(icon_ffbb89b5a01249c7aa98b3ab2e40edf5);
+        
+    
+        var popup_1c437ed0be924cf7ad50a646b6044679 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6a1420be5b145a888125cd15a91e76d = $(`<div id="html_e6a1420be5b145a888125cd15a91e76d" style="width: 100.0%; height: 100.0%;">자양중학교</div>`)[0];
+            popup_1c437ed0be924cf7ad50a646b6044679.setContent(html_e6a1420be5b145a888125cd15a91e76d);
+        
+
+        marker_bf6c2f5dc9694802bcd2c61aefaee820.bindPopup(popup_1c437ed0be924cf7ad50a646b6044679)
+        ;
+
+        
+    
+    
+            var marker_d1be9cd2237e4276a61d995b01a78853 = L.marker(
+                [37.5356668433293, 127.073045412406],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_5c9fc83c00934fb4beae1e2c13b06550 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d1be9cd2237e4276a61d995b01a78853.setIcon(icon_5c9fc83c00934fb4beae1e2c13b06550);
+        
+    
+        var popup_e6354b2bb7a643c7a3e124c23f007bce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b507f8b0c734b55a92776848d2627f4 = $(`<div id="html_8b507f8b0c734b55a92776848d2627f4" style="width: 100.0%; height: 100.0%;">자양고등학교</div>`)[0];
+            popup_e6354b2bb7a643c7a3e124c23f007bce.setContent(html_8b507f8b0c734b55a92776848d2627f4);
+        
+
+        marker_d1be9cd2237e4276a61d995b01a78853.bindPopup(popup_e6354b2bb7a643c7a3e124c23f007bce)
+        ;
+
+        
+    
+    
+            var marker_cd29f46de08e49f9b650c19a31ebdc04 = L.marker(
+                [37.5294561744657, 127.085248782225],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_47be2d6cb7dd4b8bb6e20d36e1fdef82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cd29f46de08e49f9b650c19a31ebdc04.setIcon(icon_47be2d6cb7dd4b8bb6e20d36e1fdef82);
+        
+    
+        var popup_13ed481182a94fd599020032fd42b68d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42d68391845f47528dc406070f95efaa = $(`<div id="html_42d68391845f47528dc406070f95efaa" style="width: 100.0%; height: 100.0%;">광양고등학교</div>`)[0];
+            popup_13ed481182a94fd599020032fd42b68d.setContent(html_42d68391845f47528dc406070f95efaa);
+        
+
+        marker_cd29f46de08e49f9b650c19a31ebdc04.bindPopup(popup_13ed481182a94fd599020032fd42b68d)
+        ;
+
+        
+    
+    
+            var marker_325d3a6b90d64e88a8e56e053b5dadd4 = L.marker(
+                [37.5335136376514, 127.063363038023],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_422b5459f84843c5a3297761e4f3bf78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_325d3a6b90d64e88a8e56e053b5dadd4.setIcon(icon_422b5459f84843c5a3297761e4f3bf78);
+        
+    
+        var popup_dd913f1c79264d67b8622f1edbab3c47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40e247c4f6f241d08785b9255ca379d9 = $(`<div id="html_40e247c4f6f241d08785b9255ca379d9" style="width: 100.0%; height: 100.0%;">신양중학교</div>`)[0];
+            popup_dd913f1c79264d67b8622f1edbab3c47.setContent(html_40e247c4f6f241d08785b9255ca379d9);
+        
+
+        marker_325d3a6b90d64e88a8e56e053b5dadd4.bindPopup(popup_dd913f1c79264d67b8622f1edbab3c47)
+        ;
+
+        
+    
+    
+            var marker_20518d582dd24f7096a4ef8617e3b2cf = L.marker(
+                [37.5411638987574, 127.082537416626],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_a463c9ff82894bbc979dde4720222717 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_20518d582dd24f7096a4ef8617e3b2cf.setIcon(icon_a463c9ff82894bbc979dde4720222717);
+        
+    
+        var popup_948d92f52cda42f49f9f16ded5bd798a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1d5c6e7f0bb48478a509ea702baca0f = $(`<div id="html_f1d5c6e7f0bb48478a509ea702baca0f" style="width: 100.0%; height: 100.0%;">건국대학교사범대학 부속중학교</div>`)[0];
+            popup_948d92f52cda42f49f9f16ded5bd798a.setContent(html_f1d5c6e7f0bb48478a509ea702baca0f);
+        
+
+        marker_20518d582dd24f7096a4ef8617e3b2cf.bindPopup(popup_948d92f52cda42f49f9f16ded5bd798a)
+        ;
+
+        
+    
+    
+            var marker_4445e008b61241459d861cab89b09630 = L.marker(
+                [37.5400013311353, 127.080327447515],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_a994579ecdd14cc182fca964e8ca66ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4445e008b61241459d861cab89b09630.setIcon(icon_a994579ecdd14cc182fca964e8ca66ee);
+        
+    
+        var popup_2ea2c000b8614724b9b1231e44515d3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba9562a7ae734f9786d35f00584ea7f5 = $(`<div id="html_ba9562a7ae734f9786d35f00584ea7f5" style="width: 100.0%; height: 100.0%;">건국대학교사범대학 부속고등학교</div>`)[0];
+            popup_2ea2c000b8614724b9b1231e44515d3a.setContent(html_ba9562a7ae734f9786d35f00584ea7f5);
+        
+
+        marker_4445e008b61241459d861cab89b09630.bindPopup(popup_2ea2c000b8614724b9b1231e44515d3a)
+        ;
+
+        
+    
+    
+            var marker_071803a24fe94ce29d3bdf9a475b11df = L.marker(
+                [37.5428059919186, 127.079217019013],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_a5a26a4601874b1e9d2a384dc3275c1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_071803a24fe94ce29d3bdf9a475b11df.setIcon(icon_a5a26a4601874b1e9d2a384dc3275c1c);
+        
+    
+        var popup_92db7987101b4086861e7c7584bb0e4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14c6a925d9c748898d6f0b3511efaa24 = $(`<div id="html_14c6a925d9c748898d6f0b3511efaa24" style="width: 100.0%; height: 100.0%;">구의중학교</div>`)[0];
+            popup_92db7987101b4086861e7c7584bb0e4a.setContent(html_14c6a925d9c748898d6f0b3511efaa24);
+        
+
+        marker_071803a24fe94ce29d3bdf9a475b11df.bindPopup(popup_92db7987101b4086861e7c7584bb0e4a)
+        ;
+
+        
+    
+    
+            var marker_b9d06a652175462f8454ce375b977bd1 = L.marker(
+                [37.5631776803669, 127.086726905445],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_a5a60927787c449eb0093a7a8126bad4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_b9d06a652175462f8454ce375b977bd1.setIcon(icon_a5a60927787c449eb0093a7a8126bad4);
+        
+    
+        var popup_7937570adb7f4b29a8d7c62c80186ad3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25b3ed1fddb34f84941d0b4d1fc0cc2f = $(`<div id="html_25b3ed1fddb34f84941d0b4d1fc0cc2f" style="width: 100.0%; height: 100.0%;">토즈스터디센터 중곡센터</div>`)[0];
+            popup_7937570adb7f4b29a8d7c62c80186ad3.setContent(html_25b3ed1fddb34f84941d0b4d1fc0cc2f);
+        
+
+        marker_b9d06a652175462f8454ce375b977bd1.bindPopup(popup_7937570adb7f4b29a8d7c62c80186ad3)
+        ;
+
+        
+    
+    
+            var marker_d8b7e3bc130348d5b994e44eb48c1b8f = L.marker(
+                [37.5628745597854, 127.087250598572],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_3b31e9dd6afb42998c3bda71e900398e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_d8b7e3bc130348d5b994e44eb48c1b8f.setIcon(icon_3b31e9dd6afb42998c3bda71e900398e);
+        
+    
+        var popup_57c9f8e860be4336a2b4f4524e602cfc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_323461ed7f70412789a0aad0e5820ccc = $(`<div id="html_323461ed7f70412789a0aad0e5820ccc" style="width: 100.0%; height: 100.0%;">클린스터디</div>`)[0];
+            popup_57c9f8e860be4336a2b4f4524e602cfc.setContent(html_323461ed7f70412789a0aad0e5820ccc);
+        
+
+        marker_d8b7e3bc130348d5b994e44eb48c1b8f.bindPopup(popup_57c9f8e860be4336a2b4f4524e602cfc)
+        ;
+
+        
+    
+    
+            var marker_259a5700881f4af79bab3e8a34caf1c4 = L.marker(
+                [37.5608727402437, 127.084505875624],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_360a207de19742c2828bc831bd4df877 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_259a5700881f4af79bab3e8a34caf1c4.setIcon(icon_360a207de19742c2828bc831bd4df877);
+        
+    
+        var popup_d72860421c2c4e61b7d8821076c2bc62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6dd10c0474f04fb38521a575cb1d96c3 = $(`<div id="html_6dd10c0474f04fb38521a575cb1d96c3" style="width: 100.0%; height: 100.0%;">뉴아이비독서실</div>`)[0];
+            popup_d72860421c2c4e61b7d8821076c2bc62.setContent(html_6dd10c0474f04fb38521a575cb1d96c3);
+        
+
+        marker_259a5700881f4af79bab3e8a34caf1c4.bindPopup(popup_d72860421c2c4e61b7d8821076c2bc62)
+        ;
+
+        
+    
+    
+            var marker_16b4543d5df74143a449f94ae05aae26 = L.marker(
+                [37.5620380424645, 127.087780452681],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_03bdc2eb92894cc18c1e4f2357424e98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_16b4543d5df74143a449f94ae05aae26.setIcon(icon_03bdc2eb92894cc18c1e4f2357424e98);
+        
+    
+        var popup_d4b8c04877ed43d68d7f6a9a0071ee3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1607f840d4064a71b284a4027fed9070 = $(`<div id="html_1607f840d4064a71b284a4027fed9070" style="width: 100.0%; height: 100.0%;">하버드독서실</div>`)[0];
+            popup_d4b8c04877ed43d68d7f6a9a0071ee3f.setContent(html_1607f840d4064a71b284a4027fed9070);
+        
+
+        marker_16b4543d5df74143a449f94ae05aae26.bindPopup(popup_d4b8c04877ed43d68d7f6a9a0071ee3f)
+        ;
+
+        
+    
+    
+            var marker_1d42ff9b0a6149bea5b5a9e7ae7a4a4d = L.marker(
+                [37.5620569881055, 127.086526403698],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_ade63aa86e494f50ab09643853579602 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_1d42ff9b0a6149bea5b5a9e7ae7a4a4d.setIcon(icon_ade63aa86e494f50ab09643853579602);
+        
+    
+        var popup_e6ff0e8b1a474cb89db927ebca5d3fbc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2c772f7797440d0b42719aab7b1bb31 = $(`<div id="html_a2c772f7797440d0b42719aab7b1bb31" style="width: 100.0%; height: 100.0%;">영웅독서실</div>`)[0];
+            popup_e6ff0e8b1a474cb89db927ebca5d3fbc.setContent(html_a2c772f7797440d0b42719aab7b1bb31);
+        
+
+        marker_1d42ff9b0a6149bea5b5a9e7ae7a4a4d.bindPopup(popup_e6ff0e8b1a474cb89db927ebca5d3fbc)
+        ;
+
+        
+    
+    
+            var marker_0016d80758704de9b085194541f13a87 = L.marker(
+                [37.5617584782554, 127.08567492328],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_083336df63cb45afaf2d22d0bd3aaf34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_0016d80758704de9b085194541f13a87.setIcon(icon_083336df63cb45afaf2d22d0bd3aaf34);
+        
+    
+        var popup_5ef52288d27e43ceaa4f2c4338c60dc6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42d97b8b4199489dba74411a7724800d = $(`<div id="html_42d97b8b4199489dba74411a7724800d" style="width: 100.0%; height: 100.0%;">수정 독서실</div>`)[0];
+            popup_5ef52288d27e43ceaa4f2c4338c60dc6.setContent(html_42d97b8b4199489dba74411a7724800d);
+        
+
+        marker_0016d80758704de9b085194541f13a87.bindPopup(popup_5ef52288d27e43ceaa4f2c4338c60dc6)
+        ;
+
+        
+    
+    
+            var marker_e30909aedd294a549905932352314ca6 = L.marker(
+                [37.5608763507074, 127.084496825178],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_3b60d23d23fa431e9d4b143edc8c066b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_e30909aedd294a549905932352314ca6.setIcon(icon_3b60d23d23fa431e9d4b143edc8c066b);
+        
+    
+        var popup_b342aff0763c4641b7d39e877f6583d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd9de03c5eab478e8d51f564ab8c1d67 = $(`<div id="html_bd9de03c5eab478e8d51f564ab8c1d67" style="width: 100.0%; height: 100.0%;">서울독서실</div>`)[0];
+            popup_b342aff0763c4641b7d39e877f6583d2.setContent(html_bd9de03c5eab478e8d51f564ab8c1d67);
+        
+
+        marker_e30909aedd294a549905932352314ca6.bindPopup(popup_b342aff0763c4641b7d39e877f6583d2)
+        ;
+
+        
+    
+    
+            var marker_d8b817ee98be4ceb9f3f1c07130798a2 = L.marker(
+                [37.5635226604401, 127.088081004411],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_bf58678b84de44e39f3a74b1ae49006b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_d8b817ee98be4ceb9f3f1c07130798a2.setIcon(icon_bf58678b84de44e39f3a74b1ae49006b);
+        
+    
+        var popup_110b818a1d3f41a2a47b3d8e22b77a0d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04da3fe7fbdc4e61a1d9654c6962739b = $(`<div id="html_04da3fe7fbdc4e61a1d9654c6962739b" style="width: 100.0%; height: 100.0%;">가온독서실</div>`)[0];
+            popup_110b818a1d3f41a2a47b3d8e22b77a0d.setContent(html_04da3fe7fbdc4e61a1d9654c6962739b);
+        
+
+        marker_d8b817ee98be4ceb9f3f1c07130798a2.bindPopup(popup_110b818a1d3f41a2a47b3d8e22b77a0d)
+        ;
+
+        
+    
+    
+            var marker_1aaa0e42fcb54f8ab4dcd956a0dfea47 = L.marker(
+                [37.5635958020661, 127.086645896479],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_0a742840ef534009a0a91270d916cdd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_1aaa0e42fcb54f8ab4dcd956a0dfea47.setIcon(icon_0a742840ef534009a0a91270d916cdd7);
+        
+    
+        var popup_1b0e5d81c275416dbcc560c3cf49b416 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f7569627f664c478285203ea698e5d7 = $(`<div id="html_3f7569627f664c478285203ea698e5d7" style="width: 100.0%; height: 100.0%;">해오름독서실</div>`)[0];
+            popup_1b0e5d81c275416dbcc560c3cf49b416.setContent(html_3f7569627f664c478285203ea698e5d7);
+        
+
+        marker_1aaa0e42fcb54f8ab4dcd956a0dfea47.bindPopup(popup_1b0e5d81c275416dbcc560c3cf49b416)
+        ;
+
+        
+    
+    
+            var marker_890a8c48c3fb4554897d78f550372b0c = L.marker(
+                [37.5674338306247, 127.081896300649],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_c1add05356ec4b7cac3e412b7ac500e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_890a8c48c3fb4554897d78f550372b0c.setIcon(icon_c1add05356ec4b7cac3e412b7ac500e5);
+        
+    
+        var popup_9740fbe6fead4b878102137b752d264c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcd797a6356e4040926f33fb4af317e2 = $(`<div id="html_bcd797a6356e4040926f33fb4af317e2" style="width: 100.0%; height: 100.0%;">대영독서실</div>`)[0];
+            popup_9740fbe6fead4b878102137b752d264c.setContent(html_bcd797a6356e4040926f33fb4af317e2);
+        
+
+        marker_890a8c48c3fb4554897d78f550372b0c.bindPopup(popup_9740fbe6fead4b878102137b752d264c)
+        ;
+
+        
+    
+    
+            var marker_689e804b3c944b229d5e6cc4cdb8d8eb = L.marker(
+                [37.5621277199106, 127.08834647504],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_65bac93a272d48439df831f5ac6dd371 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_689e804b3c944b229d5e6cc4cdb8d8eb.setIcon(icon_65bac93a272d48439df831f5ac6dd371);
+        
+    
+        var popup_bc7ec564a0b446468607bc4f49178507 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_518b5a79c0db4d29ae34ed4bf27eed9f = $(`<div id="html_518b5a79c0db4d29ae34ed4bf27eed9f" style="width: 100.0%; height: 100.0%;">한울독서실</div>`)[0];
+            popup_bc7ec564a0b446468607bc4f49178507.setContent(html_518b5a79c0db4d29ae34ed4bf27eed9f);
+        
+
+        marker_689e804b3c944b229d5e6cc4cdb8d8eb.bindPopup(popup_bc7ec564a0b446468607bc4f49178507)
+        ;
+
+        
+    
+    
+            var marker_24da66c8903043f39f8d20ba4ef7439b = L.marker(
+                [37.5672680758226, 127.081855370341],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_c97ef2f7725145c381183b47e0d6373a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_24da66c8903043f39f8d20ba4ef7439b.setIcon(icon_c97ef2f7725145c381183b47e0d6373a);
+        
+    
+        var popup_e011b503d52d45ea8563bb9fde0518c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd03d0daff0c4a64bbe135580650fdc4 = $(`<div id="html_bd03d0daff0c4a64bbe135580650fdc4" style="width: 100.0%; height: 100.0%;">대진독서실</div>`)[0];
+            popup_e011b503d52d45ea8563bb9fde0518c2.setContent(html_bd03d0daff0c4a64bbe135580650fdc4);
+        
+
+        marker_24da66c8903043f39f8d20ba4ef7439b.bindPopup(popup_e011b503d52d45ea8563bb9fde0518c2)
+        ;
+
+        
+    
+    
+            var marker_fb479d893d6e4488b4aa810a7dabc1d0 = L.marker(
+                [37.5677076387622, 127.082032430674],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_301943619a8642819e1e2f76887a88ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_fb479d893d6e4488b4aa810a7dabc1d0.setIcon(icon_301943619a8642819e1e2f76887a88ed);
+        
+    
+        var popup_219fe697670240b8b53ae2c4cd34de6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6e734e8afba46cca7e3a75cf6cb34e2 = $(`<div id="html_f6e734e8afba46cca7e3a75cf6cb34e2" style="width: 100.0%; height: 100.0%;">공간프리미엄독서실 중곡점</div>`)[0];
+            popup_219fe697670240b8b53ae2c4cd34de6a.setContent(html_f6e734e8afba46cca7e3a75cf6cb34e2);
+        
+
+        marker_fb479d893d6e4488b4aa810a7dabc1d0.bindPopup(popup_219fe697670240b8b53ae2c4cd34de6a)
+        ;
+
+        
+    
+    
+            var marker_062e051dc42a406ebeb235e9794d32f2 = L.marker(
+                [37.5377287827669, 127.097392033712],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_c0704acc05de4d1eaa4d4b5c16ca9b06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_062e051dc42a406ebeb235e9794d32f2.setIcon(icon_c0704acc05de4d1eaa4d4b5c16ca9b06);
+        
+    
+        var popup_f72663ed6c124325bd826d2f8e85c441 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0c04ab7a67d4d0cb4f400822c411913 = $(`<div id="html_c0c04ab7a67d4d0cb4f400822c411913" style="width: 100.0%; height: 100.0%;">작심독서실 서울강변점</div>`)[0];
+            popup_f72663ed6c124325bd826d2f8e85c441.setContent(html_c0c04ab7a67d4d0cb4f400822c411913);
+        
+
+        marker_062e051dc42a406ebeb235e9794d32f2.bindPopup(popup_f72663ed6c124325bd826d2f8e85c441)
+        ;
+
+        
+    
+    
+            var marker_203f976d5efb41938a4eca69afdae32a = L.marker(
+                [37.54060947974002, 127.09604702199613],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_07505c29816b4813b40030bbbe4c264c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_203f976d5efb41938a4eca69afdae32a.setIcon(icon_07505c29816b4813b40030bbbe4c264c);
+        
+    
+        var popup_0a9018a504b54e6d976ef45d484bb5cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09c21a81b74341f9afd3468e4632b61a = $(`<div id="html_09c21a81b74341f9afd3468e4632b61a" style="width: 100.0%; height: 100.0%;">토즈스터디센터 광장센터</div>`)[0];
+            popup_0a9018a504b54e6d976ef45d484bb5cd.setContent(html_09c21a81b74341f9afd3468e4632b61a);
+        
+
+        marker_203f976d5efb41938a4eca69afdae32a.bindPopup(popup_0a9018a504b54e6d976ef45d484bb5cd)
+        ;
+
+        
+    
+    
+            var marker_32303e2f1f7e40d2a23c8e528454d75f = L.marker(
+                [37.5404129530435, 127.093942168918],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_abc8bd4326bf4ac4b83ab6ed56ed0e6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_32303e2f1f7e40d2a23c8e528454d75f.setIcon(icon_abc8bd4326bf4ac4b83ab6ed56ed0e6c);
+        
+    
+        var popup_5038717f8a4b485d9e20f2d168286a71 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc035a5130a44d84a6ea942d24e74792 = $(`<div id="html_bc035a5130a44d84a6ea942d24e74792" style="width: 100.0%; height: 100.0%;">그린램프라이브러리 광장캠퍼스</div>`)[0];
+            popup_5038717f8a4b485d9e20f2d168286a71.setContent(html_bc035a5130a44d84a6ea942d24e74792);
+        
+
+        marker_32303e2f1f7e40d2a23c8e528454d75f.bindPopup(popup_5038717f8a4b485d9e20f2d168286a71)
+        ;
+
+        
+    
+    
+            var marker_cf3a6ea54ac9439a924e36957dcebe77 = L.marker(
+                [37.5394605417498, 127.095135829062],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_e5ccb4ca61654e0b93cbb45dc96114a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_cf3a6ea54ac9439a924e36957dcebe77.setIcon(icon_e5ccb4ca61654e0b93cbb45dc96114a4);
+        
+    
+        var popup_73ba35eb2d1f46bf88f3aa99736fcaea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca51be2c403e4048beefdb9f563b2641 = $(`<div id="html_ca51be2c403e4048beefdb9f563b2641" style="width: 100.0%; height: 100.0%;">프라임독서실</div>`)[0];
+            popup_73ba35eb2d1f46bf88f3aa99736fcaea.setContent(html_ca51be2c403e4048beefdb9f563b2641);
+        
+
+        marker_cf3a6ea54ac9439a924e36957dcebe77.bindPopup(popup_73ba35eb2d1f46bf88f3aa99736fcaea)
+        ;
+
+        
+    
+    
+            var marker_74a5fc50b5c04d02a5a5f330686c49ff = L.marker(
+                [37.541554447715, 127.085746847068],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_14d25f3375d34a1c9ded7877b4464bc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_74a5fc50b5c04d02a5a5f330686c49ff.setIcon(icon_14d25f3375d34a1c9ded7877b4464bc4);
+        
+    
+        var popup_0106f2ea5539492e86ee068d4725406e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d314c74782304df89624231884c950cc = $(`<div id="html_d314c74782304df89624231884c950cc" style="width: 100.0%; height: 100.0%;">청운독서실</div>`)[0];
+            popup_0106f2ea5539492e86ee068d4725406e.setContent(html_d314c74782304df89624231884c950cc);
+        
+
+        marker_74a5fc50b5c04d02a5a5f330686c49ff.bindPopup(popup_0106f2ea5539492e86ee068d4725406e)
+        ;
+
+        
+    
+    
+            var marker_04f65b31b957464d8eea920340fe982d = L.marker(
+                [37.5519739697355, 127.090086329957],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_9dbf14f705c245119e28a9e565fb1a10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_04f65b31b957464d8eea920340fe982d.setIcon(icon_9dbf14f705c245119e28a9e565fb1a10);
+        
+    
+        var popup_6b35d4ad74e34e5d8132a4549940bb95 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd1c11d2dd5f443cb6133b50d723ae80 = $(`<div id="html_fd1c11d2dd5f443cb6133b50d723ae80" style="width: 100.0%; height: 100.0%;">아카데미라운지 구의센터</div>`)[0];
+            popup_6b35d4ad74e34e5d8132a4549940bb95.setContent(html_fd1c11d2dd5f443cb6133b50d723ae80);
+        
+
+        marker_04f65b31b957464d8eea920340fe982d.bindPopup(popup_6b35d4ad74e34e5d8132a4549940bb95)
+        ;
+
+        
+    
+    
+            var marker_3a164d5453794396b592e4cc6f8da197 = L.marker(
+                [37.5408008477162, 127.095608240912],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_78ab790ffc144e7890ccafaeb33721cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_3a164d5453794396b592e4cc6f8da197.setIcon(icon_78ab790ffc144e7890ccafaeb33721cb);
+        
+    
+        var popup_33fe07a10a734c45857e800801405643 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0e0d5b9e14749e19a3e7adb4351ff1f = $(`<div id="html_d0e0d5b9e14749e19a3e7adb4351ff1f" style="width: 100.0%; height: 100.0%;">아카데미라운지독서실 광장센터</div>`)[0];
+            popup_33fe07a10a734c45857e800801405643.setContent(html_d0e0d5b9e14749e19a3e7adb4351ff1f);
+        
+
+        marker_3a164d5453794396b592e4cc6f8da197.bindPopup(popup_33fe07a10a734c45857e800801405643)
+        ;
+
+        
+    
+    
+            var marker_612ace3dcc6d471bbcafdbb6b28ac0cd = L.marker(
+                [37.5493481162129, 127.092857953287],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_7715c229ee314692bbfaa82cc6810240 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_612ace3dcc6d471bbcafdbb6b28ac0cd.setIcon(icon_7715c229ee314692bbfaa82cc6810240);
+        
+    
+        var popup_ca1b430267314d79a2a3c920fc7c2ecc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc3dced8bfc74e09b7945f5e77902493 = $(`<div id="html_dc3dced8bfc74e09b7945f5e77902493" style="width: 100.0%; height: 100.0%;">한울독서실</div>`)[0];
+            popup_ca1b430267314d79a2a3c920fc7c2ecc.setContent(html_dc3dced8bfc74e09b7945f5e77902493);
+        
+
+        marker_612ace3dcc6d471bbcafdbb6b28ac0cd.bindPopup(popup_ca1b430267314d79a2a3c920fc7c2ecc)
+        ;
+
+        
+    
+    
+            var marker_0ae07417763744f1b8939ea45c164ac2 = L.marker(
+                [37.5394677497405, 127.09513583822],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_070ab15f0aad4320b1ffceb8cd4836b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_0ae07417763744f1b8939ea45c164ac2.setIcon(icon_070ab15f0aad4320b1ffceb8cd4836b8);
+        
+    
+        var popup_ea6ebf5efd984a35ba651c8091c3853e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9461c991d6c4feaa35609e5e90838eb = $(`<div id="html_a9461c991d6c4feaa35609e5e90838eb" style="width: 100.0%; height: 100.0%;">그루스터디센터 구의광장센터</div>`)[0];
+            popup_ea6ebf5efd984a35ba651c8091c3853e.setContent(html_a9461c991d6c4feaa35609e5e90838eb);
+        
+
+        marker_0ae07417763744f1b8939ea45c164ac2.bindPopup(popup_ea6ebf5efd984a35ba651c8091c3853e)
+        ;
+
+        
+    
+    
+            var marker_3287d084de624e12a4135cff407d9450 = L.marker(
+                [37.5426041851502, 127.093940392103],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_8cbda2328a4b4bab89f23354370ffec5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_3287d084de624e12a4135cff407d9450.setIcon(icon_8cbda2328a4b4bab89f23354370ffec5);
+        
+    
+        var popup_1ce1b51efdfd4dbb84cd18b495f5e4f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5969767c2eeb4f288fbc82a2c1f437d7 = $(`<div id="html_5969767c2eeb4f288fbc82a2c1f437d7" style="width: 100.0%; height: 100.0%;">제이플래너독서실 본점</div>`)[0];
+            popup_1ce1b51efdfd4dbb84cd18b495f5e4f4.setContent(html_5969767c2eeb4f288fbc82a2c1f437d7);
+        
+
+        marker_3287d084de624e12a4135cff407d9450.bindPopup(popup_1ce1b51efdfd4dbb84cd18b495f5e4f4)
+        ;
+
+        
+    
+    
+            var marker_38ef87a36c4b45e2ae4e7756bc542c7a = L.marker(
+                [37.5547501658058, 127.093281129659],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_a83f502c90d44309b64fd726f344af65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_38ef87a36c4b45e2ae4e7756bc542c7a.setIcon(icon_a83f502c90d44309b64fd726f344af65);
+        
+    
+        var popup_557b25682621461baa6d90fc0fc48850 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa2f3c0456a44d78bde19efbd0824a26 = $(`<div id="html_aa2f3c0456a44d78bde19efbd0824a26" style="width: 100.0%; height: 100.0%;">푸른독서실</div>`)[0];
+            popup_557b25682621461baa6d90fc0fc48850.setContent(html_aa2f3c0456a44d78bde19efbd0824a26);
+        
+
+        marker_38ef87a36c4b45e2ae4e7756bc542c7a.bindPopup(popup_557b25682621461baa6d90fc0fc48850)
+        ;
+
+        
+    
+    
+            var marker_d2d3e921b9af4d54aa22498cadb2b7bc = L.marker(
+                [37.5485792703739, 127.107043104333],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_1ada8d97119d42f39513e1a2e5a7ecf5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_d2d3e921b9af4d54aa22498cadb2b7bc.setIcon(icon_1ada8d97119d42f39513e1a2e5a7ecf5);
+        
+    
+        var popup_240720c9cc384b28905371effc7ee104 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f41645b10b74bd79fca1dc97c2644bc = $(`<div id="html_7f41645b10b74bd79fca1dc97c2644bc" style="width: 100.0%; height: 100.0%;">포일스독서실</div>`)[0];
+            popup_240720c9cc384b28905371effc7ee104.setContent(html_7f41645b10b74bd79fca1dc97c2644bc);
+        
+
+        marker_d2d3e921b9af4d54aa22498cadb2b7bc.bindPopup(popup_240720c9cc384b28905371effc7ee104)
+        ;
+
+        
+    
+    
+            var marker_67ca45960ac949ec9c750106f4ba7897 = L.marker(
+                [37.5418170530558, 127.095758900119],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_11fb2d2337594c0ab3319b22f9cd18de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_67ca45960ac949ec9c750106f4ba7897.setIcon(icon_11fb2d2337594c0ab3319b22f9cd18de);
+        
+    
+        var popup_a4b58cc942cc43648712ed605f3b999d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_307524ac77c34375a33d3fe5dca60b1f = $(`<div id="html_307524ac77c34375a33d3fe5dca60b1f" style="width: 100.0%; height: 100.0%;">하우스터디독서실 광장센터</div>`)[0];
+            popup_a4b58cc942cc43648712ed605f3b999d.setContent(html_307524ac77c34375a33d3fe5dca60b1f);
+        
+
+        marker_67ca45960ac949ec9c750106f4ba7897.bindPopup(popup_a4b58cc942cc43648712ed605f3b999d)
+        ;
+
+        
+    
+    
+            var marker_deb82fa66e374e6babaa77139c925873 = L.marker(
+                [37.5419530601406, 127.101213044568],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_fde5a23a189042d3aa2e1a20599008eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_deb82fa66e374e6babaa77139c925873.setIcon(icon_fde5a23a189042d3aa2e1a20599008eb);
+        
+    
+        var popup_fb967913e78d4b90b3d586405c745f4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05bc174319f84d9195e058a6ca475fbd = $(`<div id="html_05bc174319f84d9195e058a6ca475fbd" style="width: 100.0%; height: 100.0%;">스터디뱅크독서실</div>`)[0];
+            popup_fb967913e78d4b90b3d586405c745f4b.setContent(html_05bc174319f84d9195e058a6ca475fbd);
+        
+
+        marker_deb82fa66e374e6babaa77139c925873.bindPopup(popup_fb967913e78d4b90b3d586405c745f4b)
+        ;
+
+        
+    
+    
+            var marker_ad26be98ed0840ebb6b18999ee9a3e8d = L.marker(
+                [37.5460233517617, 127.104795505376],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_2b183e9d2b024d3bb887ed58bb31f4b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_ad26be98ed0840ebb6b18999ee9a3e8d.setIcon(icon_2b183e9d2b024d3bb887ed58bb31f4b3);
+        
+    
+        var popup_1c7624335199474bb4abbfff592522ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e99a69d7bf0043d7a7ecfaf2213f9be3 = $(`<div id="html_e99a69d7bf0043d7a7ecfaf2213f9be3" style="width: 100.0%; height: 100.0%;">원클래스독서실</div>`)[0];
+            popup_1c7624335199474bb4abbfff592522ce.setContent(html_e99a69d7bf0043d7a7ecfaf2213f9be3);
+        
+
+        marker_ad26be98ed0840ebb6b18999ee9a3e8d.bindPopup(popup_1c7624335199474bb4abbfff592522ce)
+        ;
+
+        
+    
+    
+            var marker_48561fe731134a29b657db666aa50c8c = L.marker(
+                [37.5477796596937, 127.106516890538],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_a81651b7e4b846a8ade1190a1d84a83f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_48561fe731134a29b657db666aa50c8c.setIcon(icon_a81651b7e4b846a8ade1190a1d84a83f);
+        
+    
+        var popup_e381c1b7144549d08a7c0e2284e4a502 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99d5a3b0af094d5c902884922abd23b0 = $(`<div id="html_99d5a3b0af094d5c902884922abd23b0" style="width: 100.0%; height: 100.0%;">플랜에이카페와독서실 광장센터</div>`)[0];
+            popup_e381c1b7144549d08a7c0e2284e4a502.setContent(html_99d5a3b0af094d5c902884922abd23b0);
+        
+
+        marker_48561fe731134a29b657db666aa50c8c.bindPopup(popup_e381c1b7144549d08a7c0e2284e4a502)
+        ;
+
+        
+    
+    
+            var marker_ccec6b284aaf4a5ca99f89166382d5d9 = L.marker(
+                [37.5419686040955, 127.095532788066],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_b723252f5afd44099b90a7d364625485 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_ccec6b284aaf4a5ca99f89166382d5d9.setIcon(icon_b723252f5afd44099b90a7d364625485);
+        
+    
+        var popup_71c456313fe644c6a39e9da401ec1a7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a67d6c5b40f449b4bf26fe463312a3c8 = $(`<div id="html_a67d6c5b40f449b4bf26fe463312a3c8" style="width: 100.0%; height: 100.0%;">독서실하이코스</div>`)[0];
+            popup_71c456313fe644c6a39e9da401ec1a7b.setContent(html_a67d6c5b40f449b4bf26fe463312a3c8);
+        
+
+        marker_ccec6b284aaf4a5ca99f89166382d5d9.bindPopup(popup_71c456313fe644c6a39e9da401ec1a7b)
+        ;
+
+        
+    
+    
+            var marker_56a0ab3f883e493e8bfa35bc7d75d2d8 = L.marker(
+                [37.5374081374362, 127.083099007156],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_4aca0396dd4645bdbaf48071c001f9cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_56a0ab3f883e493e8bfa35bc7d75d2d8.setIcon(icon_4aca0396dd4645bdbaf48071c001f9cc);
+        
+    
+        var popup_8665b347aeda44b9bd7681b08273fb11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3b74a51b11446e496786f9b5d923520 = $(`<div id="html_f3b74a51b11446e496786f9b5d923520" style="width: 100.0%; height: 100.0%;">토즈스터디센터 자양사거리센터</div>`)[0];
+            popup_8665b347aeda44b9bd7681b08273fb11.setContent(html_f3b74a51b11446e496786f9b5d923520);
+        
+
+        marker_56a0ab3f883e493e8bfa35bc7d75d2d8.bindPopup(popup_8665b347aeda44b9bd7681b08273fb11)
+        ;
+
+        
+    
+    
+            var marker_ba7295d9d8964857b7a9d43e3a562740 = L.marker(
+                [37.5370129207817, 127.070100417338],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_04e7f5fa71cd48aabbbcf335681a6b95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_ba7295d9d8964857b7a9d43e3a562740.setIcon(icon_04e7f5fa71cd48aabbbcf335681a6b95);
+        
+    
+        var popup_3bd57ea81b0748608bd38b578acf4e01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c6bde1b004243aeb65de8dfa86c5e71 = $(`<div id="html_9c6bde1b004243aeb65de8dfa86c5e71" style="width: 100.0%; height: 100.0%;">스터디뱅크독서실</div>`)[0];
+            popup_3bd57ea81b0748608bd38b578acf4e01.setContent(html_9c6bde1b004243aeb65de8dfa86c5e71);
+        
+
+        marker_ba7295d9d8964857b7a9d43e3a562740.bindPopup(popup_3bd57ea81b0748608bd38b578acf4e01)
+        ;
+
+        
+    
+    
+            var marker_7ef19dce248e4bb18ae9f2d6e8fe3177 = L.marker(
+                [37.5334582946968, 127.067310449429],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_e57aa58d7b47472c9fb51353b15c914a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_7ef19dce248e4bb18ae9f2d6e8fe3177.setIcon(icon_e57aa58d7b47472c9fb51353b15c914a);
+        
+    
+        var popup_eb0809d5fc884c1d8b30b2bb19ae8eb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebd971b555cc4c57afe81a1f0634c52c = $(`<div id="html_ebd971b555cc4c57afe81a1f0634c52c" style="width: 100.0%; height: 100.0%;">어썸팩토리 자양플레이스</div>`)[0];
+            popup_eb0809d5fc884c1d8b30b2bb19ae8eb1.setContent(html_ebd971b555cc4c57afe81a1f0634c52c);
+        
+
+        marker_7ef19dce248e4bb18ae9f2d6e8fe3177.bindPopup(popup_eb0809d5fc884c1d8b30b2bb19ae8eb1)
+        ;
+
+        
+    
+    
+            var marker_c7f540d178664adaa513f586fc3003fe = L.marker(
+                [37.533463299857, 127.075428256664],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_b724b58de6bf44379baee5a65ca114bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_c7f540d178664adaa513f586fc3003fe.setIcon(icon_b724b58de6bf44379baee5a65ca114bb);
+        
+    
+        var popup_97e35c3db64f4a74b6eb6d2df497545e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c15e7a6fb1f843acb410a1dc94e9595a = $(`<div id="html_c15e7a6fb1f843acb410a1dc94e9595a" style="width: 100.0%; height: 100.0%;">탑독서실</div>`)[0];
+            popup_97e35c3db64f4a74b6eb6d2df497545e.setContent(html_c15e7a6fb1f843acb410a1dc94e9595a);
+        
+
+        marker_c7f540d178664adaa513f586fc3003fe.bindPopup(popup_97e35c3db64f4a74b6eb6d2df497545e)
+        ;
+
+        
+    
+    
+            var marker_74d4840171cb47e7a8d4fa6feded50db = L.marker(
+                [37.5337394925661, 127.084048710996],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_52f97954a0e8407aba4f133a3c2f9048 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_74d4840171cb47e7a8d4fa6feded50db.setIcon(icon_52f97954a0e8407aba4f133a3c2f9048);
+        
+    
+        var popup_1a88084bd1c246e68114e241607bcbd8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf0af926990a48368a840fb5329a0db3 = $(`<div id="html_cf0af926990a48368a840fb5329a0db3" style="width: 100.0%; height: 100.0%;">스터디&카페</div>`)[0];
+            popup_1a88084bd1c246e68114e241607bcbd8.setContent(html_cf0af926990a48368a840fb5329a0db3);
+        
+
+        marker_74d4840171cb47e7a8d4fa6feded50db.bindPopup(popup_1a88084bd1c246e68114e241607bcbd8)
+        ;
+
+        
+    
+    
+            var marker_29a3494e530c456bbd2b3ce5823bca71 = L.marker(
+                [37.5310656245206, 127.086129684395],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_8d72477f9e8b40d4b749434e393553c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_29a3494e530c456bbd2b3ce5823bca71.setIcon(icon_8d72477f9e8b40d4b749434e393553c2);
+        
+    
+        var popup_4bdda378f9454929ae48e550ca32dfe8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7ad79e711da41a79e6fdf24c886ae57 = $(`<div id="html_b7ad79e711da41a79e6fdf24c886ae57" style="width: 100.0%; height: 100.0%;">바짝독서실 자양센터</div>`)[0];
+            popup_4bdda378f9454929ae48e550ca32dfe8.setContent(html_b7ad79e711da41a79e6fdf24c886ae57);
+        
+
+        marker_29a3494e530c456bbd2b3ce5823bca71.bindPopup(popup_4bdda378f9454929ae48e550ca32dfe8)
+        ;
+
+        
+    
+    
+            var marker_708b742d3b7c4e74bdd7e6b7bbfb7a02 = L.marker(
+                [37.5336917097658, 127.084090519337],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_039cbe9269274964917c00b13dd8a1e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_708b742d3b7c4e74bdd7e6b7bbfb7a02.setIcon(icon_039cbe9269274964917c00b13dd8a1e7);
+        
+    
+        var popup_323bea63038444ce9a9fc20257260c4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06d854b3f94c446987720f86fe72bd71 = $(`<div id="html_06d854b3f94c446987720f86fe72bd71" style="width: 100.0%; height: 100.0%;">에이플러스독서실</div>`)[0];
+            popup_323bea63038444ce9a9fc20257260c4a.setContent(html_06d854b3f94c446987720f86fe72bd71);
+        
+
+        marker_708b742d3b7c4e74bdd7e6b7bbfb7a02.bindPopup(popup_323bea63038444ce9a9fc20257260c4a)
+        ;
+
+        
+    
+    
+            var marker_e0a719514a9146c6b42ba56882c037ac = L.marker(
+                [37.5324792134823, 127.075730477094],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_59bd40a6ffbd493ab4794cbcd51392ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_e0a719514a9146c6b42ba56882c037ac.setIcon(icon_59bd40a6ffbd493ab4794cbcd51392ac);
+        
+    
+        var popup_bb437f91f20d4a869d85308418d3a0c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0320e39bc044152aba34de6324c27c1 = $(`<div id="html_b0320e39bc044152aba34de6324c27c1" style="width: 100.0%; height: 100.0%;">대학당독서실</div>`)[0];
+            popup_bb437f91f20d4a869d85308418d3a0c8.setContent(html_b0320e39bc044152aba34de6324c27c1);
+        
+
+        marker_e0a719514a9146c6b42ba56882c037ac.bindPopup(popup_bb437f91f20d4a869d85308418d3a0c8)
+        ;
+
+        
+    
+    
+            var marker_f5d211a6b3e24cdeaa25edf1678a8e80 = L.marker(
+                [37.5301390695919, 127.082805841748],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_dee9da8624834f3c8c9aae249ed0d0f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_f5d211a6b3e24cdeaa25edf1678a8e80.setIcon(icon_dee9da8624834f3c8c9aae249ed0d0f8);
+        
+    
+        var popup_413d411a205847db8e338186f6724cd1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7141053f44c94caa943677e5de62c661 = $(`<div id="html_7141053f44c94caa943677e5de62c661" style="width: 100.0%; height: 100.0%;">명인독서실</div>`)[0];
+            popup_413d411a205847db8e338186f6724cd1.setContent(html_7141053f44c94caa943677e5de62c661);
+        
+
+        marker_f5d211a6b3e24cdeaa25edf1678a8e80.bindPopup(popup_413d411a205847db8e338186f6724cd1)
+        ;
+
+        
+    
+    
+            var marker_9ad4ba92f6474f37bbf9446c000c6009 = L.marker(
+                [37.5342658919406, 127.07140123403],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_41f7b0781a0c4c3d95ef25dcf3d57dcb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_9ad4ba92f6474f37bbf9446c000c6009.setIcon(icon_41f7b0781a0c4c3d95ef25dcf3d57dcb);
+        
+    
+        var popup_725a3762f32746bd9d8c7e112b5098de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_188e8dc7882746b5afab15ad91f724ee = $(`<div id="html_188e8dc7882746b5afab15ad91f724ee" style="width: 100.0%; height: 100.0%;">광희독서실</div>`)[0];
+            popup_725a3762f32746bd9d8c7e112b5098de.setContent(html_188e8dc7882746b5afab15ad91f724ee);
+        
+
+        marker_9ad4ba92f6474f37bbf9446c000c6009.bindPopup(popup_725a3762f32746bd9d8c7e112b5098de)
+        ;
+
+        
+    
+    
+            var marker_f9878cc281b04a2eabe159d635ff66d5 = L.marker(
+                [37.5326705264323, 127.075260012679],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_289d3fd703a0448dbb9954b743ea6ac4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_f9878cc281b04a2eabe159d635ff66d5.setIcon(icon_289d3fd703a0448dbb9954b743ea6ac4);
+        
+    
+        var popup_22e147c136984252a256d06740825198 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_743f9af781d64794af3db01791ccec04 = $(`<div id="html_743f9af781d64794af3db01791ccec04" style="width: 100.0%; height: 100.0%;">별하독서실</div>`)[0];
+            popup_22e147c136984252a256d06740825198.setContent(html_743f9af781d64794af3db01791ccec04);
+        
+
+        marker_f9878cc281b04a2eabe159d635ff66d5.bindPopup(popup_22e147c136984252a256d06740825198)
+        ;
+
+        
+    
+    
+            var marker_c773429942d344c7abbc8641c526d547 = L.marker(
+                [37.5341727444208, 127.076275267172],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_432effbf9ec2440eb5be25cb2cd3f0b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_c773429942d344c7abbc8641c526d547.setIcon(icon_432effbf9ec2440eb5be25cb2cd3f0b6);
+        
+    
+        var popup_5303895730cd4a66b7134f494fc9d118 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_927243242b254c62b21b5db43b197eef = $(`<div id="html_927243242b254c62b21b5db43b197eef" style="width: 100.0%; height: 100.0%;">고운빛독서실</div>`)[0];
+            popup_5303895730cd4a66b7134f494fc9d118.setContent(html_927243242b254c62b21b5db43b197eef);
+        
+
+        marker_c773429942d344c7abbc8641c526d547.bindPopup(popup_5303895730cd4a66b7134f494fc9d118)
+        ;
+
+        
+    
+    
+            var marker_2ccb7770f7734619be3a94df22a02927 = L.marker(
+                [37.5315607191413, 127.08038627677],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_cf89977bbe124c548a7e6268cd25b6ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_2ccb7770f7734619be3a94df22a02927.setIcon(icon_cf89977bbe124c548a7e6268cd25b6ff);
+        
+    
+        var popup_5fcc8093aeb5499bab7f63ae0a139b80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d052a401a164cbeacdaed8903539829 = $(`<div id="html_9d052a401a164cbeacdaed8903539829" style="width: 100.0%; height: 100.0%;">은혜독서실</div>`)[0];
+            popup_5fcc8093aeb5499bab7f63ae0a139b80.setContent(html_9d052a401a164cbeacdaed8903539829);
+        
+
+        marker_2ccb7770f7734619be3a94df22a02927.bindPopup(popup_5fcc8093aeb5499bab7f63ae0a139b80)
+        ;
+
+        
+    
+    
+            var marker_47032bdade0f4ca38fad955d4df8a754 = L.marker(
+                [37.5301138606106, 127.08277866147],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_8a623cba57fa48d7aefdb07db056449f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_47032bdade0f4ca38fad955d4df8a754.setIcon(icon_8a623cba57fa48d7aefdb07db056449f);
+        
+    
+        var popup_40338199a365414281477d4d8f845ac5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b959770bc4f8408b9843cb44b8b4e37c = $(`<div id="html_b959770bc4f8408b9843cb44b8b4e37c" style="width: 100.0%; height: 100.0%;">솔로독서실</div>`)[0];
+            popup_40338199a365414281477d4d8f845ac5.setContent(html_b959770bc4f8408b9843cb44b8b4e37c);
+        
+
+        marker_47032bdade0f4ca38fad955d4df8a754.bindPopup(popup_40338199a365414281477d4d8f845ac5)
+        ;
+
+        
+    
+    
+            var marker_e455a471d07e4c3c9fec30c3e629ad0d = L.marker(
+                [37.5436164270837, 127.069967418699],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_764eb174214c4f55a27a16b0f788d88d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_e455a471d07e4c3c9fec30c3e629ad0d.setIcon(icon_764eb174214c4f55a27a16b0f788d88d);
+        
+    
+        var popup_ab75202ac5ef4391ae01241a7feb3168 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09c7853012c14d31991c963565b3d254 = $(`<div id="html_09c7853012c14d31991c963565b3d254" style="width: 100.0%; height: 100.0%;">렛츠스터디공간</div>`)[0];
+            popup_ab75202ac5ef4391ae01241a7feb3168.setContent(html_09c7853012c14d31991c963565b3d254);
+        
+
+        marker_e455a471d07e4c3c9fec30c3e629ad0d.bindPopup(popup_ab75202ac5ef4391ae01241a7feb3168)
+        ;
+
+        
+    
+    
+            var marker_f02ce71cd667427ea07d9a11aecca545 = L.marker(
+                [37.5519110229835, 127.071467857776],
+                {}
+            ).addTo(map_ec8cb79c96414d5e9376f5d38b835c8f);
+        
+    
+            var icon_4bc890e9bcbe4a078278bf4a55f837e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_f02ce71cd667427ea07d9a11aecca545.setIcon(icon_4bc890e9bcbe4a078278bf4a55f837e3);
+        
+    
+        var popup_44dfca85d73648f887d1183e2ed51370 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6778e16715a846e1ab32be15429e9b80 = $(`<div id="html_6778e16715a846e1ab32be15429e9b80" style="width: 100.0%; height: 100.0%;">스터디뱅크독서실 군자학습관</div>`)[0];
+            popup_44dfca85d73648f887d1183e2ed51370.setContent(html_6778e16715a846e1ab32be15429e9b80);
+        
+
+        marker_f02ce71cd667427ea07d9a11aecca545.bindPopup(popup_44dfca85d73648f887d1183e2ed51370)
+        ;
+
+        
+    
+</script>

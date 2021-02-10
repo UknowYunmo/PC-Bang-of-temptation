@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4ad94b905fee49fa8a283c1687ef3b9c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4ad94b905fee49fa8a283c1687ef3b9c" ></div>
+        
+</body>
+<script>    
+    
+            var map_4ad94b905fee49fa8a283c1687ef3b9c = L.map(
+                "map_4ad94b905fee49fa8a283c1687ef3b9c",
+                {
+                    center: [37.5385583136667, 127.082385189457],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5c65fc177d1241b691afb45a549bdf51 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var marker_62cd9a607f524aaf8db080fe17ad929b = L.marker(
+                [37.5636624479222, 127.089104368169],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_71d2d2c9ed9a49f3bdf62ace96adb994 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_62cd9a607f524aaf8db080fe17ad929b.setIcon(icon_71d2d2c9ed9a49f3bdf62ace96adb994);
+        
+    
+        var popup_00b71bd4f4bd44b4875c21f08d11ec62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a91282d12174b09b9852cad5ed8b9e3 = $(`<div id="html_3a91282d12174b09b9852cad5ed8b9e3" style="width: 100.0%; height: 100.0%;">대원외국어고등학교</div>`)[0];
+            popup_00b71bd4f4bd44b4875c21f08d11ec62.setContent(html_3a91282d12174b09b9852cad5ed8b9e3);
+        
+
+        marker_62cd9a607f524aaf8db080fe17ad929b.bindPopup(popup_00b71bd4f4bd44b4875c21f08d11ec62)
+        ;
+
+        
+    
+    
+            var marker_cd04d1a39ce24a3dbca14da5adbc22c9 = L.marker(
+                [37.5631647765463, 127.089529351024],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_1c378197b80c46b280aa15d963124455 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cd04d1a39ce24a3dbca14da5adbc22c9.setIcon(icon_1c378197b80c46b280aa15d963124455);
+        
+    
+        var popup_d5d33151380744b3b13fadae7eb9a714 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_242a6c62ef9a4b6f9c15d9f37bf022b3 = $(`<div id="html_242a6c62ef9a4b6f9c15d9f37bf022b3" style="width: 100.0%; height: 100.0%;">대원고등학교</div>`)[0];
+            popup_d5d33151380744b3b13fadae7eb9a714.setContent(html_242a6c62ef9a4b6f9c15d9f37bf022b3);
+        
+
+        marker_cd04d1a39ce24a3dbca14da5adbc22c9.bindPopup(popup_d5d33151380744b3b13fadae7eb9a714)
+        ;
+
+        
+    
+    
+            var marker_e8c8803e39ed4f098ab7cea62c3f72f9 = L.marker(
+                [37.5624620790373, 127.089424380914],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_9ee335050c8749d794d9ad4b0caeb187 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e8c8803e39ed4f098ab7cea62c3f72f9.setIcon(icon_9ee335050c8749d794d9ad4b0caeb187);
+        
+    
+        var popup_1be8b7a363454a708c3540d1fa308063 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83cc75a0dfa04289926ca31bfdf6f0da = $(`<div id="html_83cc75a0dfa04289926ca31bfdf6f0da" style="width: 100.0%; height: 100.0%;">대원여자고등학교</div>`)[0];
+            popup_1be8b7a363454a708c3540d1fa308063.setContent(html_83cc75a0dfa04289926ca31bfdf6f0da);
+        
+
+        marker_e8c8803e39ed4f098ab7cea62c3f72f9.bindPopup(popup_1be8b7a363454a708c3540d1fa308063)
+        ;
+
+        
+    
+    
+            var marker_3a1dd09c162c417d9708ddcd165fb002 = L.marker(
+                [37.563885631132, 127.089453247136],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_0e9e3da923be4f8d9922ab680da8db42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3a1dd09c162c417d9708ddcd165fb002.setIcon(icon_0e9e3da923be4f8d9922ab680da8db42);
+        
+    
+        var popup_63dab2026ef54a20a325a8f8530c8879 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bf44afc94a847b2938bd45b575bc016 = $(`<div id="html_3bf44afc94a847b2938bd45b575bc016" style="width: 100.0%; height: 100.0%;">대원국제중학교</div>`)[0];
+            popup_63dab2026ef54a20a325a8f8530c8879.setContent(html_3bf44afc94a847b2938bd45b575bc016);
+        
+
+        marker_3a1dd09c162c417d9708ddcd165fb002.bindPopup(popup_63dab2026ef54a20a325a8f8530c8879)
+        ;
+
+        
+    
+    
+            var marker_7cbd18eb6c684ee78144ca0c760c0b96 = L.marker(
+                [37.2121369763565, 127.061308788459],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_897e8f70586f43aca91c417f0d1f0182 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7cbd18eb6c684ee78144ca0c760c0b96.setIcon(icon_897e8f70586f43aca91c417f0d1f0182);
+        
+    
+        var popup_a96e16819a214f94a2bbdb65dadc21ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4668110ae68347bd8df4c88fda5e52ac = $(`<div id="html_4668110ae68347bd8df4c88fda5e52ac" style="width: 100.0%; height: 100.0%;">능동중학교</div>`)[0];
+            popup_a96e16819a214f94a2bbdb65dadc21ca.setContent(html_4668110ae68347bd8df4c88fda5e52ac);
+        
+
+        marker_7cbd18eb6c684ee78144ca0c760c0b96.bindPopup(popup_a96e16819a214f94a2bbdb65dadc21ca)
+        ;
+
+        
+    
+    
+            var marker_1658b5003e3b4ec5b70f21ba7a5bf976 = L.marker(
+                [37.2138544623622, 127.057547297295],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_50c7ff6720c641e7b44d1fd0fa0ab6f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1658b5003e3b4ec5b70f21ba7a5bf976.setIcon(icon_50c7ff6720c641e7b44d1fd0fa0ab6f6);
+        
+    
+        var popup_7a207d8e3b1a420fad3ee507c683c5cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98971408df3549e4a69d3ce150a495ad = $(`<div id="html_98971408df3549e4a69d3ce150a495ad" style="width: 100.0%; height: 100.0%;">능동고등학교</div>`)[0];
+            popup_7a207d8e3b1a420fad3ee507c683c5cb.setContent(html_98971408df3549e4a69d3ce150a495ad);
+        
+
+        marker_1658b5003e3b4ec5b70f21ba7a5bf976.bindPopup(popup_7a207d8e3b1a420fad3ee507c683c5cb)
+        ;
+
+        
+    
+    
+            var marker_6eece767dd7d4e52a0a5f86fed52dbac = L.marker(
+                [37.2022061318704, 127.056610267997],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_664f5ae95c0e46c89831e0cd10bd4b0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6eece767dd7d4e52a0a5f86fed52dbac.setIcon(icon_664f5ae95c0e46c89831e0cd10bd4b0c);
+        
+    
+        var popup_763e910264ba4e9b8cf20b4c7bd9a7a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71005d1d192447488d4f9d2f3b790d98 = $(`<div id="html_71005d1d192447488d4f9d2f3b790d98" style="width: 100.0%; height: 100.0%;">푸른중학교</div>`)[0];
+            popup_763e910264ba4e9b8cf20b4c7bd9a7a9.setContent(html_71005d1d192447488d4f9d2f3b790d98);
+        
+
+        marker_6eece767dd7d4e52a0a5f86fed52dbac.bindPopup(popup_763e910264ba4e9b8cf20b4c7bd9a7a9)
+        ;
+
+        
+    
+    
+            var marker_c76c5ec076764545aa1e7c11c796ecd2 = L.marker(
+                [37.5432654113521, 127.08702519396182],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_49f0bd89441f42eead4564755e6f20b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c76c5ec076764545aa1e7c11c796ecd2.setIcon(icon_49f0bd89441f42eead4564755e6f20b8);
+        
+    
+        var popup_4aa30dbd9459462584065c0331b4dde9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e9858fa69324da8893b62d335d5f16c = $(`<div id="html_1e9858fa69324da8893b62d335d5f16c" style="width: 100.0%; height: 100.0%;">동국대학교 사범대학 부속여자고등학교</div>`)[0];
+            popup_4aa30dbd9459462584065c0331b4dde9.setContent(html_1e9858fa69324da8893b62d335d5f16c);
+        
+
+        marker_c76c5ec076764545aa1e7c11c796ecd2.bindPopup(popup_4aa30dbd9459462584065c0331b4dde9)
+        ;
+
+        
+    
+    
+            var marker_f905262b03cf48a093bb18f343ca52ca = L.marker(
+                [37.5424939226997, 127.087341127698],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_0de11db1c61d476f8cf031dfb9f5fa14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f905262b03cf48a093bb18f343ca52ca.setIcon(icon_0de11db1c61d476f8cf031dfb9f5fa14);
+        
+    
+        var popup_abd90f415f194b9f80ffa9139d5620d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8e7ca23895549f49a4211c163375a77 = $(`<div id="html_a8e7ca23895549f49a4211c163375a77" style="width: 100.0%; height: 100.0%;">동국대학교 사범대학부속여자중학교</div>`)[0];
+            popup_abd90f415f194b9f80ffa9139d5620d7.setContent(html_a8e7ca23895549f49a4211c163375a77);
+        
+
+        marker_f905262b03cf48a093bb18f343ca52ca.bindPopup(popup_abd90f415f194b9f80ffa9139d5620d7)
+        ;
+
+        
+    
+    
+            var marker_50d76d1b9bf149be840629caece602d1 = L.marker(
+                [37.5413869612066, 127.101529105077],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_5366172ed88d46799106ff1781004560 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_50d76d1b9bf149be840629caece602d1.setIcon(icon_5366172ed88d46799106ff1781004560);
+        
+    
+        var popup_00e771182bc941efb6b5c8cd832089f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a76e98a78ef4ce38351891e9731bcbc = $(`<div id="html_2a76e98a78ef4ce38351891e9731bcbc" style="width: 100.0%; height: 100.0%;">광남고등학교</div>`)[0];
+            popup_00e771182bc941efb6b5c8cd832089f8.setContent(html_2a76e98a78ef4ce38351891e9731bcbc);
+        
+
+        marker_50d76d1b9bf149be840629caece602d1.bindPopup(popup_00e771182bc941efb6b5c8cd832089f8)
+        ;
+
+        
+    
+    
+            var marker_f93eea3fa27040069774738c73308c9e = L.marker(
+                [37.5472972737522, 127.101808707054],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_2bba24f31db54795939a956950c1015d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f93eea3fa27040069774738c73308c9e.setIcon(icon_2bba24f31db54795939a956950c1015d);
+        
+    
+        var popup_d42b2a49d4c54f2d99528652425344f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4f8a09ed1754b319db64e116d49e2b4 = $(`<div id="html_a4f8a09ed1754b319db64e116d49e2b4" style="width: 100.0%; height: 100.0%;">광장중학교</div>`)[0];
+            popup_d42b2a49d4c54f2d99528652425344f3.setContent(html_a4f8a09ed1754b319db64e116d49e2b4);
+        
+
+        marker_f93eea3fa27040069774738c73308c9e.bindPopup(popup_d42b2a49d4c54f2d99528652425344f3)
+        ;
+
+        
+    
+    
+            var marker_1b1321c0693947f4bc5cc492f2065b50 = L.marker(
+                [37.54045812903372, 127.10141469495024],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_7b68595d8e3d421889a1cebf4b3bb1c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1b1321c0693947f4bc5cc492f2065b50.setIcon(icon_7b68595d8e3d421889a1cebf4b3bb1c2);
+        
+    
+        var popup_12c086677f7444f989b698d2774feaa1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d4f693a7eca45998727e0658f502afe = $(`<div id="html_9d4f693a7eca45998727e0658f502afe" style="width: 100.0%; height: 100.0%;">광남중학교</div>`)[0];
+            popup_12c086677f7444f989b698d2774feaa1.setContent(html_9d4f693a7eca45998727e0658f502afe);
+        
+
+        marker_1b1321c0693947f4bc5cc492f2065b50.bindPopup(popup_12c086677f7444f989b698d2774feaa1)
+        ;
+
+        
+    
+    
+            var marker_f6d7dfd89835452594e1c62eee212f40 = L.marker(
+                [37.5450730890035, 127.0981665329],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_00432eace9374585ac31f08e874bd161 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f6d7dfd89835452594e1c62eee212f40.setIcon(icon_00432eace9374585ac31f08e874bd161);
+        
+    
+        var popup_a65e1b7c093641689040564ca22fcba4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9c2eaa5a44944c8b3b634d01fbdd077 = $(`<div id="html_f9c2eaa5a44944c8b3b634d01fbdd077" style="width: 100.0%; height: 100.0%;">양진중학교</div>`)[0];
+            popup_a65e1b7c093641689040564ca22fcba4.setContent(html_f9c2eaa5a44944c8b3b634d01fbdd077);
+        
+
+        marker_f6d7dfd89835452594e1c62eee212f40.bindPopup(popup_a65e1b7c093641689040564ca22fcba4)
+        ;
+
+        
+    
+    
+            var marker_96f0d295867b407a94b7eb332557b2d4 = L.marker(
+                [37.5355505392486, 127.074606675947],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_53d38d08661548f3b4ff2c105484bc28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_96f0d295867b407a94b7eb332557b2d4.setIcon(icon_53d38d08661548f3b4ff2c105484bc28);
+        
+    
+        var popup_c20391c4e5454992946bb07ff0ffbca8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e62182fa95854861b8d2f9507f490af6 = $(`<div id="html_e62182fa95854861b8d2f9507f490af6" style="width: 100.0%; height: 100.0%;">자양중학교</div>`)[0];
+            popup_c20391c4e5454992946bb07ff0ffbca8.setContent(html_e62182fa95854861b8d2f9507f490af6);
+        
+
+        marker_96f0d295867b407a94b7eb332557b2d4.bindPopup(popup_c20391c4e5454992946bb07ff0ffbca8)
+        ;
+
+        
+    
+    
+            var marker_6950af822a744c34993f832f9df235de = L.marker(
+                [37.5356668433293, 127.073045412406],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_9cf98c44535c4b81bc002cc0c02a9bb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6950af822a744c34993f832f9df235de.setIcon(icon_9cf98c44535c4b81bc002cc0c02a9bb4);
+        
+    
+        var popup_691004eb626d4e30ae9d8549cfc13bbd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_287e9b952285444e940fbe35a84c9510 = $(`<div id="html_287e9b952285444e940fbe35a84c9510" style="width: 100.0%; height: 100.0%;">자양고등학교</div>`)[0];
+            popup_691004eb626d4e30ae9d8549cfc13bbd.setContent(html_287e9b952285444e940fbe35a84c9510);
+        
+
+        marker_6950af822a744c34993f832f9df235de.bindPopup(popup_691004eb626d4e30ae9d8549cfc13bbd)
+        ;
+
+        
+    
+    
+            var marker_5e1ed401544a40a38d303660d0648747 = L.marker(
+                [37.5294561744657, 127.085248782225],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_b3958b50ac084ef1bad428ac79da9b50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5e1ed401544a40a38d303660d0648747.setIcon(icon_b3958b50ac084ef1bad428ac79da9b50);
+        
+    
+        var popup_d8c959eb579043a8a32362d6eaf1d1d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5733acedefe842b8bcad863d4339a78e = $(`<div id="html_5733acedefe842b8bcad863d4339a78e" style="width: 100.0%; height: 100.0%;">광양고등학교</div>`)[0];
+            popup_d8c959eb579043a8a32362d6eaf1d1d2.setContent(html_5733acedefe842b8bcad863d4339a78e);
+        
+
+        marker_5e1ed401544a40a38d303660d0648747.bindPopup(popup_d8c959eb579043a8a32362d6eaf1d1d2)
+        ;
+
+        
+    
+    
+            var marker_82e3331a79f347b6845fa6a2d047981d = L.marker(
+                [37.5335136376514, 127.063363038023],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_30b4f0f1bf744efa94b1438b5cf955ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_82e3331a79f347b6845fa6a2d047981d.setIcon(icon_30b4f0f1bf744efa94b1438b5cf955ba);
+        
+    
+        var popup_1c205d6e34864964beda508550caf4d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_701021033afa49f7ac062fb63860d614 = $(`<div id="html_701021033afa49f7ac062fb63860d614" style="width: 100.0%; height: 100.0%;">신양중학교</div>`)[0];
+            popup_1c205d6e34864964beda508550caf4d9.setContent(html_701021033afa49f7ac062fb63860d614);
+        
+
+        marker_82e3331a79f347b6845fa6a2d047981d.bindPopup(popup_1c205d6e34864964beda508550caf4d9)
+        ;
+
+        
+    
+    
+            var marker_11a3a95ddcc94063bb28467345a530b7 = L.marker(
+                [37.5411638987574, 127.082537416626],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_779dee90869045b298a40aa4cd69f1f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_11a3a95ddcc94063bb28467345a530b7.setIcon(icon_779dee90869045b298a40aa4cd69f1f0);
+        
+    
+        var popup_2f5b32a2084a443faf06bc9bcd08dd2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0ee661b5b254594bf4ef583dce026d0 = $(`<div id="html_c0ee661b5b254594bf4ef583dce026d0" style="width: 100.0%; height: 100.0%;">건국대학교사범대학 부속중학교</div>`)[0];
+            popup_2f5b32a2084a443faf06bc9bcd08dd2a.setContent(html_c0ee661b5b254594bf4ef583dce026d0);
+        
+
+        marker_11a3a95ddcc94063bb28467345a530b7.bindPopup(popup_2f5b32a2084a443faf06bc9bcd08dd2a)
+        ;
+
+        
+    
+    
+            var marker_59f172ee2f2040968eee33ce52513704 = L.marker(
+                [37.5400013311353, 127.080327447515],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_58c49fb15bbb4877a1bb93208169e116 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_59f172ee2f2040968eee33ce52513704.setIcon(icon_58c49fb15bbb4877a1bb93208169e116);
+        
+    
+        var popup_2643d4aa963444f8a15d4f1c1f745c4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8abef775c964fc38f330165cba9f977 = $(`<div id="html_e8abef775c964fc38f330165cba9f977" style="width: 100.0%; height: 100.0%;">건국대학교사범대학 부속고등학교</div>`)[0];
+            popup_2643d4aa963444f8a15d4f1c1f745c4c.setContent(html_e8abef775c964fc38f330165cba9f977);
+        
+
+        marker_59f172ee2f2040968eee33ce52513704.bindPopup(popup_2643d4aa963444f8a15d4f1c1f745c4c)
+        ;
+
+        
+    
+    
+            var marker_84225c3a22d14be3ad436a6f474c994b = L.marker(
+                [37.5428059919186, 127.079217019013],
+                {"maxWidth": "40"}
+            ).addTo(map_4ad94b905fee49fa8a283c1687ef3b9c);
+        
+    
+            var icon_431c679b7ccb4f8498cf6906762d4f0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "male", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_84225c3a22d14be3ad436a6f474c994b.setIcon(icon_431c679b7ccb4f8498cf6906762d4f0a);
+        
+    
+        var popup_cee1e01aa9034363ac393c78bc01efc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e4c4ef51627422cb60a5457490fd133 = $(`<div id="html_2e4c4ef51627422cb60a5457490fd133" style="width: 100.0%; height: 100.0%;">구의중학교</div>`)[0];
+            popup_cee1e01aa9034363ac393c78bc01efc1.setContent(html_2e4c4ef51627422cb60a5457490fd133);
+        
+
+        marker_84225c3a22d14be3ad436a6f474c994b.bindPopup(popup_cee1e01aa9034363ac393c78bc01efc1)
+        ;
+
+        
+    
+</script>
