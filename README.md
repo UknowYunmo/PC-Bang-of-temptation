@@ -17,7 +17,7 @@ https://apis.map.kakao.com/
 
 ![readme12](https://user-images.githubusercontent.com/69154643/107637985-515d9c80-6cb2-11eb-9d60-2af001a5059c.JPG)
 
-API를 Json을 이용한 파싱으로 불러들여 다음과 같은 데이터를 수집했다.
+API를 Json을 이용한 파싱을 통해 다음과 같은 데이터를 수집했다.
 
 ## 데이터 시각화
 
